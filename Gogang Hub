@@ -185,25 +185,26 @@ end
 coroutine.wrap(PEZEBTE_fake_script)()
 
 PrisonLife.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
 end)
 
 easygggames.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
 end)
 
 Jailbreak.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
 end)
 
 page.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/gui2finishfresh"))()
+	loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/gui2finishfresh"))()
 end)
 
 PrisonLife.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 end)
 
 easygggames.MouseButton1Down:connect(function()
-	script: loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+	loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
 end)
+
