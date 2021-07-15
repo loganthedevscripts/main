@@ -9,8 +9,9 @@ local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local PrisonLife = Instance.new("TextButton")
 local Jailbreak = Instance.new("TextButton")
-local easygggames = Instance.new("TextButton")
+local islands = Instance.new("TextButton")
 local page = Instance.new("TextButton")
+local bedwars = Instance.new("TextButton")
 
 --Properties:
 
@@ -67,17 +68,17 @@ Jailbreak.TextScaled = true
 Jailbreak.TextSize = 14.000
 Jailbreak.TextWrapped = true
 
-easygggames.Name = "easygggames"
-easygggames.Parent = Frame
-easygggames.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
-easygggames.Position = UDim2.new(0.0185566843, 0, 0.57681942, 0)
-easygggames.Size = UDim2.new(0, 216, 0, 140)
-easygggames.Font = Enum.Font.SourceSans
-easygggames.Text = "Easy.gg Games"
-easygggames.TextColor3 = Color3.fromRGB(0, 0, 0)
-easygggames.TextScaled = true
-easygggames.TextSize = 14.000
-easygggames.TextWrapped = true
+islands.Name = "islands"
+islands.Parent = Frame
+islands.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+islands.Position = UDim2.new(0.018556701, 0, 0.57681942, 0)
+islands.Size = UDim2.new(0, 216, 0, 65)
+islands.Font = Enum.Font.SourceSans
+islands.Text = "Islands"
+islands.TextColor3 = Color3.fromRGB(0, 0, 0)
+islands.TextScaled = true
+islands.TextSize = 14.000
+islands.TextWrapped = true
 
 page.Name = "page"
 page.Parent = Frame
@@ -91,9 +92,21 @@ page.TextScaled = true
 page.TextSize = 14.000
 page.TextWrapped = true
 
+bedwars.Name = "bedwars"
+bedwars.Parent = Frame
+bedwars.BackgroundColor3 = Color3.fromRGB(255, 255, 17)
+bedwars.Position = UDim2.new(0.018556701, 0, 0.778975725, 0)
+bedwars.Size = UDim2.new(0, 216, 0, 65)
+bedwars.Font = Enum.Font.SourceSans
+bedwars.Text = "BedWars"
+bedwars.TextColor3 = Color3.fromRGB(0, 0, 0)
+bedwars.TextScaled = true
+bedwars.TextSize = 14.000
+bedwars.TextWrapped = true
+
 -- Scripts:
 
-local function RFTJQWN_fake_script() -- Frame.LocalScript 
+local function ITGLPNT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -168,27 +181,28 @@ local function RFTJQWN_fake_script() -- Frame.LocalScript
 	
 	
 end
-coroutine.wrap(RFTJQWN_fake_script)()
-local function SFWEIT_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(ITGLPNT_fake_script)()
+local function TFVLRDH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(SFWEIT_fake_script)()
-local function PEZEBTE_fake_script() -- page.LocalScript 
+coroutine.wrap(TFVLRDH_fake_script)()
+local function VCSEGC_fake_script() -- page.LocalScript 
 	local script = Instance.new('LocalScript', page)
+
 
 	
 end
-coroutine.wrap(PEZEBTE_fake_script)()
+coroutine.wrap(VCSEGC_fake_script)()
 
 PrisonLife.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
 end)
 
-easygggames.MouseButton1Down:connect(function()
+bedwars.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
 end)
 
@@ -204,7 +218,7 @@ PrisonLife.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 end)
 
-easygggames.MouseButton1Down:connect(function()
+islands.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
 end)
 
