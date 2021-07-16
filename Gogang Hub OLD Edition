@@ -1,0 +1,825 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local InsertedObjects = Instance.new("ScreenGui")
+local Gradient = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local SusHub = Instance.new("TextLabel")
+local PrevailPrisonLife = Instance.new("TextButton")
+local VynixuPrisonLife = Instance.new("TextButton")
+local VynixuJailbreak = Instance.new("TextButton")
+local BedWars = Instance.new("TextButton")
+local Islands = Instance.new("TextButton")
+local DarkHub = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local VoltHub = Instance.new("TextButton")
+local MonkeyHub = Instance.new("TextButton")
+local BruhHub = Instance.new("TextButton")
+local FunkyFriday = Instance.new("TextButton")
+local Piggy = Instance.new("TextButton")
+local MyResturant = Instance.new("TextButton")
+local SkyWars2 = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local WackyWizards = Instance.new("TextButton")
+local Sharkbite = Instance.new("TextButton")
+local BABFT = Instance.new("TextButton")
+local MM2 = Instance.new("TextButton")
+local Bloxburg = Instance.new("TextButton")
+local BreakingPointAimbot = Instance.new("TextButton")
+local BreakingPointLights = Instance.new("TextButton")
+local ProjectLaz = Instance.new("TextButton")
+local PaintballBIG = Instance.new("TextButton")
+local PhantomForces = Instance.new("TextButton")
+local SpeedSim = Instance.new("TextButton")
+local Malltoon = Instance.new("TextButton")
+local Mortem = Instance.new("TextButton")
+local AdoptMe = Instance.new("TextButton")
+local MeepCity = Instance.new("TextButton")
+local SkyWars1 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+InsertedObjects.Name = "InsertedObjects"
+InsertedObjects.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Gradient.Name = "Gradient"
+Gradient.Parent = InsertedObjects
+Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient.BackgroundTransparency = 1.000
+Gradient.Position = UDim2.new(0.322518051, 0, 0.314468086, 0)
+Gradient.Size = UDim2.new(0, 598, 0, 584)
+Gradient.Image = "rbxassetid://3570695787"
+Gradient.ScaleType = Enum.ScaleType.Slice
+Gradient.SliceCenter = Rect.new(100, 100, 100, 100)
+Gradient.SliceScale = 0.120
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 148, 102)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(237, 102, 109))}
+UIGradient.Parent = Gradient
+
+SusHub.Name = "Sus Hub"
+SusHub.Parent = Gradient
+SusHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SusHub.BackgroundTransparency = 1.000
+SusHub.Position = UDim2.new(0.293958217, 0, 0.0527325869, 0)
+SusHub.Size = UDim2.new(0, 246, 0, 80)
+SusHub.Font = Enum.Font.DenkOne
+SusHub.Text = "Gogang Hub"
+SusHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+SusHub.TextScaled = true
+SusHub.TextSize = 14.000
+SusHub.TextWrapped = true
+
+PrevailPrisonLife.Name = "PrevailPrisonLife"
+PrevailPrisonLife.Parent = Gradient
+PrevailPrisonLife.BackgroundColor3 = Color3.fromRGB(165, 255, 61)
+PrevailPrisonLife.BackgroundTransparency = 0.500
+PrevailPrisonLife.BorderSizePixel = 0
+PrevailPrisonLife.Position = UDim2.new(0.0844611749, 0, 0.182448745, 0)
+PrevailPrisonLife.Size = UDim2.new(0, 78, 0, 78)
+PrevailPrisonLife.Font = Enum.Font.SourceSans
+PrevailPrisonLife.Text = "Prevail Prison Life"
+PrevailPrisonLife.TextColor3 = Color3.fromRGB(0, 0, 0)
+PrevailPrisonLife.TextScaled = true
+PrevailPrisonLife.TextSize = 14.000
+PrevailPrisonLife.TextWrapped = true
+
+VynixuPrisonLife.Name = "VynixuPrisonLife"
+VynixuPrisonLife.Parent = Gradient
+VynixuPrisonLife.BackgroundColor3 = Color3.fromRGB(165, 255, 61)
+VynixuPrisonLife.BackgroundTransparency = 0.500
+VynixuPrisonLife.BorderSizePixel = 0
+VynixuPrisonLife.Position = UDim2.new(0.260046452, 0, 0.182448745, 0)
+VynixuPrisonLife.Size = UDim2.new(0, 78, 0, 78)
+VynixuPrisonLife.Font = Enum.Font.SourceSans
+VynixuPrisonLife.Text = "Vynixu Prison Life"
+VynixuPrisonLife.TextColor3 = Color3.fromRGB(0, 0, 0)
+VynixuPrisonLife.TextScaled = true
+VynixuPrisonLife.TextSize = 14.000
+VynixuPrisonLife.TextWrapped = true
+
+VynixuJailbreak.Name = "VynixuJailbreak"
+VynixuJailbreak.Parent = Gradient
+VynixuJailbreak.BackgroundColor3 = Color3.fromRGB(246, 255, 57)
+VynixuJailbreak.BackgroundTransparency = 0.500
+VynixuJailbreak.BorderSizePixel = 0
+VynixuJailbreak.Position = UDim2.new(0.433959484, 0, 0.182448745, 0)
+VynixuJailbreak.Size = UDim2.new(0, 78, 0, 78)
+VynixuJailbreak.Font = Enum.Font.SourceSans
+VynixuJailbreak.Text = "Vynixu Jailbreak"
+VynixuJailbreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+VynixuJailbreak.TextScaled = true
+VynixuJailbreak.TextSize = 14.000
+VynixuJailbreak.TextWrapped = true
+
+BedWars.Name = "BedWars"
+BedWars.Parent = Gradient
+BedWars.BackgroundColor3 = Color3.fromRGB(51, 255, 29)
+BedWars.BackgroundTransparency = 0.500
+BedWars.BorderSizePixel = 0
+BedWars.Position = UDim2.new(0.614561498, 0, 0.182448745, 0)
+BedWars.Size = UDim2.new(0, 78, 0, 78)
+BedWars.Font = Enum.Font.SourceSans
+BedWars.Text = "Easy.gg's BedWars"
+BedWars.TextColor3 = Color3.fromRGB(0, 0, 0)
+BedWars.TextScaled = true
+BedWars.TextSize = 14.000
+BedWars.TextWrapped = true
+
+Islands.Name = "Islands"
+Islands.Parent = Gradient
+Islands.BackgroundColor3 = Color3.fromRGB(51, 255, 29)
+Islands.BackgroundTransparency = 0.500
+Islands.BorderSizePixel = 0
+Islands.Position = UDim2.new(0.793491244, 0, 0.182448745, 0)
+Islands.Size = UDim2.new(0, 78, 0, 78)
+Islands.Font = Enum.Font.SourceSans
+Islands.Text = "Easy.gg's Islands"
+Islands.TextColor3 = Color3.fromRGB(0, 0, 0)
+Islands.TextScaled = true
+Islands.TextSize = 14.000
+Islands.TextWrapped = true
+
+DarkHub.Name = "DarkHub"
+DarkHub.Parent = Gradient
+DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.BackgroundTransparency = 0.500
+DarkHub.BorderSizePixel = 0
+DarkHub.Position = UDim2.new(0.793491244, 0, 0.314047635, 0)
+DarkHub.Size = UDim2.new(0, 78, 0, 78)
+DarkHub.Font = Enum.Font.SourceSans
+DarkHub.Text = "Dark Hub"
+DarkHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkHub.TextScaled = true
+DarkHub.TextSize = 14.000
+DarkHub.TextWrapped = true
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Gradient
+OwlHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.BackgroundTransparency = 0.500
+OwlHub.BorderSizePixel = 0
+OwlHub.Position = UDim2.new(0.614561498, 0, 0.314047635, 0)
+OwlHub.Size = UDim2.new(0, 78, 0, 78)
+OwlHub.Font = Enum.Font.SourceSans
+OwlHub.Text = "Owl Hub"
+OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+OwlHub.TextScaled = true
+OwlHub.TextSize = 14.000
+OwlHub.TextWrapped = true
+
+VoltHub.Name = "VoltHub"
+VoltHub.Parent = Gradient
+VoltHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VoltHub.BackgroundTransparency = 0.500
+VoltHub.BorderSizePixel = 0
+VoltHub.Position = UDim2.new(0.0844611526, 0, 0.314047635, 0)
+VoltHub.Size = UDim2.new(0, 78, 0, 78)
+VoltHub.Font = Enum.Font.SourceSans
+VoltHub.Text = "Volt Hub"
+VoltHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+VoltHub.TextScaled = true
+VoltHub.TextSize = 14.000
+VoltHub.TextWrapped = true
+
+MonkeyHub.Name = "MonkeyHub"
+MonkeyHub.Parent = Gradient
+MonkeyHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MonkeyHub.BackgroundTransparency = 0.500
+MonkeyHub.BorderSizePixel = 0
+MonkeyHub.Position = UDim2.new(0.433959484, 0, 0.314047635, 0)
+MonkeyHub.Size = UDim2.new(0, 78, 0, 78)
+MonkeyHub.Font = Enum.Font.SourceSans
+MonkeyHub.Text = "Monkey Hub"
+MonkeyHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+MonkeyHub.TextScaled = true
+MonkeyHub.TextSize = 14.000
+MonkeyHub.TextWrapped = true
+
+BruhHub.Name = "BruhHub"
+BruhHub.Parent = Gradient
+BruhHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BruhHub.BackgroundTransparency = 0.500
+BruhHub.BorderSizePixel = 0
+BruhHub.Position = UDim2.new(0.260046422, 0, 0.314047635, 0)
+BruhHub.Size = UDim2.new(0, 78, 0, 78)
+BruhHub.Font = Enum.Font.SourceSans
+BruhHub.Text = "Bruh Hub"
+BruhHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+BruhHub.TextScaled = true
+BruhHub.TextSize = 14.000
+BruhHub.TextWrapped = true
+
+FunkyFriday.Name = "FunkyFriday"
+FunkyFriday.Parent = Gradient
+FunkyFriday.BackgroundColor3 = Color3.fromRGB(255, 139, 56)
+FunkyFriday.BackgroundTransparency = 0.500
+FunkyFriday.BorderSizePixel = 0
+FunkyFriday.Position = UDim2.new(0.0844611526, 0, 0.445313841, 0)
+FunkyFriday.Size = UDim2.new(0, 78, 0, 78)
+FunkyFriday.Font = Enum.Font.SourceSans
+FunkyFriday.Text = "Funky Friday"
+FunkyFriday.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunkyFriday.TextScaled = true
+FunkyFriday.TextSize = 14.000
+FunkyFriday.TextWrapped = true
+
+Piggy.Name = "Piggy"
+Piggy.Parent = Gradient
+Piggy.BackgroundColor3 = Color3.fromRGB(248, 29, 255)
+Piggy.BackgroundTransparency = 0.500
+Piggy.BorderSizePixel = 0
+Piggy.Position = UDim2.new(0.433959484, 0, 0.445313841, 0)
+Piggy.Size = UDim2.new(0, 78, 0, 78)
+Piggy.Font = Enum.Font.SourceSans
+Piggy.Text = "Piggy"
+Piggy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Piggy.TextScaled = true
+Piggy.TextSize = 14.000
+Piggy.TextWrapped = true
+
+MyResturant.Name = "MyResturant"
+MyResturant.Parent = Gradient
+MyResturant.BackgroundColor3 = Color3.fromRGB(85, 96, 255)
+MyResturant.BackgroundTransparency = 0.500
+MyResturant.BorderSizePixel = 0
+MyResturant.Position = UDim2.new(0.793491244, 0, 0.445313841, 0)
+MyResturant.Size = UDim2.new(0, 78, 0, 78)
+MyResturant.Font = Enum.Font.SourceSans
+MyResturant.Text = "My Resturant"
+MyResturant.TextColor3 = Color3.fromRGB(0, 0, 0)
+MyResturant.TextScaled = true
+MyResturant.TextSize = 14.000
+MyResturant.TextWrapped = true
+
+SkyWars2.Name = "SkyWars2"
+SkyWars2.Parent = Gradient
+SkyWars2.BackgroundColor3 = Color3.fromRGB(255, 60, 11)
+SkyWars2.BackgroundTransparency = 0.500
+SkyWars2.BorderSizePixel = 0
+SkyWars2.Position = UDim2.new(0.614561498, 0, 0.445313841, 0)
+SkyWars2.Size = UDim2.new(0, 78, 0, 78)
+SkyWars2.Font = Enum.Font.SourceSans
+SkyWars2.Text = "SkyWars 2"
+SkyWars2.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkyWars2.TextScaled = true
+SkyWars2.TextSize = 14.000
+SkyWars2.TextWrapped = true
+
+TextButton.Parent = Gradient
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.914715707, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 50, 0, 79)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+WackyWizards.Name = "WackyWizards"
+WackyWizards.Parent = Gradient
+WackyWizards.BackgroundColor3 = Color3.fromRGB(178, 70, 255)
+WackyWizards.BackgroundTransparency = 0.500
+WackyWizards.BorderSizePixel = 0
+WackyWizards.Position = UDim2.new(0.433959484, 0, 0.581614256, 0)
+WackyWizards.Size = UDim2.new(0, 78, 0, 78)
+WackyWizards.Font = Enum.Font.SourceSans
+WackyWizards.Text = "Wacky Wizards"
+WackyWizards.TextColor3 = Color3.fromRGB(0, 0, 0)
+WackyWizards.TextScaled = true
+WackyWizards.TextSize = 14.000
+WackyWizards.TextWrapped = true
+
+Sharkbite.Name = "Sharkbite"
+Sharkbite.Parent = Gradient
+Sharkbite.BackgroundColor3 = Color3.fromRGB(43, 255, 224)
+Sharkbite.BackgroundTransparency = 0.500
+Sharkbite.BorderSizePixel = 0
+Sharkbite.Position = UDim2.new(0.0844611526, 0, 0.581614256, 0)
+Sharkbite.Size = UDim2.new(0, 78, 0, 78)
+Sharkbite.Font = Enum.Font.SourceSans
+Sharkbite.Text = "SharkBite"
+Sharkbite.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sharkbite.TextScaled = true
+Sharkbite.TextSize = 14.000
+Sharkbite.TextWrapped = true
+
+BABFT.Name = "BABFT"
+BABFT.Parent = Gradient
+BABFT.BackgroundColor3 = Color3.fromRGB(39, 24, 255)
+BABFT.BackgroundTransparency = 0.500
+BABFT.BorderSizePixel = 0
+BABFT.Position = UDim2.new(0.793491244, 0, 0.581614256, 0)
+BABFT.Size = UDim2.new(0, 78, 0, 78)
+BABFT.Font = Enum.Font.SourceSans
+BABFT.Text = "Build a Boat for Treasure"
+BABFT.TextColor3 = Color3.fromRGB(0, 0, 0)
+BABFT.TextScaled = true
+BABFT.TextSize = 14.000
+BABFT.TextWrapped = true
+
+MM2.Name = "MM2"
+MM2.Parent = Gradient
+MM2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MM2.BackgroundTransparency = 0.500
+MM2.BorderSizePixel = 0
+MM2.Position = UDim2.new(0.260046422, 0, 0.581614256, 0)
+MM2.Size = UDim2.new(0, 78, 0, 78)
+MM2.Font = Enum.Font.SourceSans
+MM2.Text = "MM2"
+MM2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MM2.TextScaled = true
+MM2.TextSize = 14.000
+MM2.TextWrapped = true
+
+Bloxburg.Name = "Bloxburg"
+Bloxburg.Parent = Gradient
+Bloxburg.BackgroundColor3 = Color3.fromRGB(76, 255, 244)
+Bloxburg.BackgroundTransparency = 0.500
+Bloxburg.BorderSizePixel = 0
+Bloxburg.Position = UDim2.new(0.614561439, 0, 0.581614256, 0)
+Bloxburg.Size = UDim2.new(0, 78, 0, 78)
+Bloxburg.Font = Enum.Font.SourceSans
+Bloxburg.Text = "Bloxburg"
+Bloxburg.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bloxburg.TextScaled = true
+Bloxburg.TextSize = 14.000
+Bloxburg.TextWrapped = true
+
+BreakingPointAimbot.Name = "BreakingPointAimbot"
+BreakingPointAimbot.Parent = Gradient
+BreakingPointAimbot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BreakingPointAimbot.BackgroundTransparency = 0.500
+BreakingPointAimbot.BorderSizePixel = 0
+BreakingPointAimbot.Position = UDim2.new(0.260046422, 0, 0.716523886, 0)
+BreakingPointAimbot.Size = UDim2.new(0, 78, 0, 78)
+BreakingPointAimbot.Font = Enum.Font.SourceSans
+BreakingPointAimbot.Text = "Breaking Point: Aimbot"
+BreakingPointAimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+BreakingPointAimbot.TextScaled = true
+BreakingPointAimbot.TextSize = 14.000
+BreakingPointAimbot.TextWrapped = true
+
+BreakingPointLights.Name = "BreakingPointLights"
+BreakingPointLights.Parent = Gradient
+BreakingPointLights.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BreakingPointLights.BackgroundTransparency = 0.500
+BreakingPointLights.BorderSizePixel = 0
+BreakingPointLights.Position = UDim2.new(0.614561498, 0, 0.716523886, 0)
+BreakingPointLights.Size = UDim2.new(0, 78, 0, 78)
+BreakingPointLights.Font = Enum.Font.SourceSans
+BreakingPointLights.Text = "Breaking Point: Lights on!"
+BreakingPointLights.TextColor3 = Color3.fromRGB(0, 0, 0)
+BreakingPointLights.TextScaled = true
+BreakingPointLights.TextSize = 14.000
+BreakingPointLights.TextWrapped = true
+
+ProjectLaz.Name = "ProjectLaz"
+ProjectLaz.Parent = Gradient
+ProjectLaz.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ProjectLaz.BackgroundTransparency = 0.500
+ProjectLaz.BorderSizePixel = 0
+ProjectLaz.Position = UDim2.new(0.433959514, 0, 0.716523886, 0)
+ProjectLaz.Size = UDim2.new(0, 78, 0, 78)
+ProjectLaz.Font = Enum.Font.SourceSans
+ProjectLaz.Text = "Project Lazourus"
+ProjectLaz.TextColor3 = Color3.fromRGB(0, 0, 0)
+ProjectLaz.TextScaled = true
+ProjectLaz.TextSize = 14.000
+ProjectLaz.TextWrapped = true
+
+PaintballBIG.Name = "PaintballBIG"
+PaintballBIG.Parent = Gradient
+PaintballBIG.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PaintballBIG.BackgroundTransparency = 0.500
+PaintballBIG.BorderSizePixel = 0
+PaintballBIG.Position = UDim2.new(0.0844611824, 0, 0.716523886, 0)
+PaintballBIG.Size = UDim2.new(0, 78, 0, 78)
+PaintballBIG.Font = Enum.Font.SourceSans
+PaintballBIG.Text = "BIG Paintball"
+PaintballBIG.TextColor3 = Color3.fromRGB(0, 0, 0)
+PaintballBIG.TextScaled = true
+PaintballBIG.TextSize = 14.000
+PaintballBIG.TextWrapped = true
+
+PhantomForces.Name = "PhantomForces"
+PhantomForces.Parent = Gradient
+PhantomForces.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PhantomForces.BackgroundTransparency = 0.500
+PhantomForces.BorderSizePixel = 0
+PhantomForces.Position = UDim2.new(0.791819096, 0, 0.716523886, 0)
+PhantomForces.Size = UDim2.new(0, 78, 0, 78)
+PhantomForces.Font = Enum.Font.SourceSans
+PhantomForces.Text = "Phantom Forces"
+PhantomForces.TextColor3 = Color3.fromRGB(0, 0, 0)
+PhantomForces.TextScaled = true
+PhantomForces.TextSize = 14.000
+PhantomForces.TextWrapped = true
+
+SpeedSim.Name = "SpeedSim"
+SpeedSim.Parent = Gradient
+SpeedSim.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+SpeedSim.BackgroundTransparency = 0.500
+SpeedSim.BorderSizePixel = 0
+SpeedSim.Position = UDim2.new(0.0844611824, 0, 0.844479382, 0)
+SpeedSim.Size = UDim2.new(0, 78, 0, 78)
+SpeedSim.Font = Enum.Font.SourceSans
+SpeedSim.Text = "Speed Simulator"
+SpeedSim.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedSim.TextScaled = true
+SpeedSim.TextSize = 14.000
+SpeedSim.TextWrapped = true
+
+Malltoon.Name = "Malltoon"
+Malltoon.Parent = Gradient
+Malltoon.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Malltoon.BackgroundTransparency = 0.500
+Malltoon.BorderSizePixel = 0
+Malltoon.Position = UDim2.new(0.790146828, 0, 0.844479382, 0)
+Malltoon.Size = UDim2.new(0, 78, 0, 78)
+Malltoon.Font = Enum.Font.SourceSans
+Malltoon.Text = "Mall Tycon"
+Malltoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+Malltoon.TextScaled = true
+Malltoon.TextSize = 14.000
+Malltoon.TextWrapped = true
+
+Mortem.Name = "Mortem"
+Mortem.Parent = Gradient
+Mortem.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Mortem.BackgroundTransparency = 0.500
+Mortem.BorderSizePixel = 0
+Mortem.Position = UDim2.new(0.433959544, 0, 0.844479382, 0)
+Mortem.Size = UDim2.new(0, 78, 0, 78)
+Mortem.Font = Enum.Font.SourceSans
+Mortem.Text = "Mortem Mortallium"
+Mortem.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mortem.TextScaled = true
+Mortem.TextSize = 14.000
+Mortem.TextWrapped = true
+
+AdoptMe.Name = "AdoptMe"
+AdoptMe.Parent = Gradient
+AdoptMe.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+AdoptMe.BackgroundTransparency = 0.500
+AdoptMe.BorderSizePixel = 0
+AdoptMe.Position = UDim2.new(0.258374274, 0, 0.844479382, 0)
+AdoptMe.Size = UDim2.new(0, 78, 0, 78)
+AdoptMe.Font = Enum.Font.SourceSans
+AdoptMe.Text = "Adopt Me"
+AdoptMe.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdoptMe.TextScaled = true
+AdoptMe.TextSize = 14.000
+AdoptMe.TextWrapped = true
+
+MeepCity.Name = "MeepCity"
+MeepCity.Parent = Gradient
+MeepCity.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+MeepCity.BackgroundTransparency = 0.500
+MeepCity.BorderSizePixel = 0
+MeepCity.Position = UDim2.new(0.61288929, 0, 0.844479382, 0)
+MeepCity.Size = UDim2.new(0, 78, 0, 78)
+MeepCity.Font = Enum.Font.SourceSans
+MeepCity.Text = "MeepCity"
+MeepCity.TextColor3 = Color3.fromRGB(0, 0, 0)
+MeepCity.TextScaled = true
+MeepCity.TextSize = 14.000
+MeepCity.TextWrapped = true
+
+SkyWars1.Name = "SkyWars1"
+SkyWars1.Parent = Gradient
+SkyWars1.BackgroundColor3 = Color3.fromRGB(255, 60, 11)
+SkyWars1.BackgroundTransparency = 0.500
+SkyWars1.BorderSizePixel = 0
+SkyWars1.Position = UDim2.new(0.260046452, 0, 0.445313841, 0)
+SkyWars1.Size = UDim2.new(0, 78, 0, 78)
+SkyWars1.Font = Enum.Font.SourceSans
+SkyWars1.Text = "SkyWars 1"
+SkyWars1.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkyWars1.TextScaled = true
+SkyWars1.TextSize = 14.000
+SkyWars1.TextWrapped = true
+
+TextLabel.Parent = Gradient
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 596, 0, 719)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+-- Scripts:
+
+local function TDFOZIN_fake_script() -- PrevailPrisonLife.Script 
+	local script = Instance.new('Script', PrevailPrisonLife)
+
+VynixuPrisonLife.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()	end)
+end
+coroutine.wrap(TDFOZIN_fake_script)()
+local function SEDLII_fake_script() -- VynixuPrisonLife.Script 
+	local script = Instance.new('Script', VynixuPrisonLife)
+
+PrevailPrisonLife.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+	end)
+end
+coroutine.wrap(SEDLII_fake_script)()
+local function RQIMH_fake_script() -- VynixuJailbreak.Script 
+	local script = Instance.new('Script', VynixuJailbreak)
+
+	VynixuJailbreak.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+	end)
+end
+coroutine.wrap(RQIMH_fake_script)()
+local function ZQUN_fake_script() -- BedWars.Script 
+	local script = Instance.new('Script', BedWars)
+
+	BedWars.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondHands-Exploit/BedWarsExploit/main/Source.lua"))()
+	end)
+end
+coroutine.wrap(ZQUN_fake_script)()
+local function UXQGA_fake_script() -- Islands.Script 
+	local script = Instance.new('Script', Islands)
+
+	Islands.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+	end)
+end
+coroutine.wrap(UXQGA_fake_script)()
+local function BXXASQK_fake_script() -- DarkHub.Script 
+	local script = Instance.new('Script', DarkHub)
+
+	OwlHub.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+end
+coroutine.wrap(BXXASQK_fake_script)()
+local function LLXPX_fake_script() -- OwlHub.Script 
+	local script = Instance.new('Script', OwlHub)
+
+	BruhHub.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	end)
+end
+coroutine.wrap(LLXPX_fake_script)()
+local function FZPPV_fake_script() -- VoltHub.Script 
+	local script = Instance.new('Script', VoltHub)
+
+	VoltHub.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('http://cattoware.tk/main.lua'))() --its truely just unnamed hub 
+	end)
+end
+coroutine.wrap(FZPPV_fake_script)()
+local function KHHYD_fake_script() -- MonkeyHub.Script 
+	local script = Instance.new('Script', MonkeyHub)
+
+	DarkHub.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(KHHYD_fake_script)()
+local function BUAW_fake_script() -- BruhHub.Script 
+	local script = Instance.new('Script', BruhHub)
+
+	MonkeyHub.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+	end)
+end
+coroutine.wrap(BUAW_fake_script)()
+local function DUTEQR_fake_script() -- FunkyFriday.Script 
+	local script = Instance.new('Script', FunkyFriday)
+
+	Mortem.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://risa.gq/Samuel/Mortem.txt"))()
+	end)
+end
+coroutine.wrap(DUTEQR_fake_script)()
+local function SUEYK_fake_script() -- Piggy.Script 
+	local script = Instance.new('Script', Piggy)
+
+	ProjectLaz.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	end)
+end
+coroutine.wrap(SUEYK_fake_script)()
+local function ODDSC_fake_script() -- MyResturant.Script 
+	local script = Instance.new('Script', MyResturant)
+
+	BreakingPointAimbot.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/MLPypHYv', true))()
+	end)
+end
+coroutine.wrap(ODDSC_fake_script)()
+local function GNMGVB_fake_script() -- SkyWars2.Script 
+	local script = Instance.new('Script', SkyWars2)
+
+	BreakingPointLights.MouseButton1Down:connect(function()
+		loadstring(game:GetObjects("rbxassetid://1014703659")[1].Source)()
+	end)
+end
+coroutine.wrap(GNMGVB_fake_script)()
+local function PLSBQBK_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(PLSBQBK_fake_script)()
+local function XPUDM_fake_script() -- WackyWizards.Script 
+	local script = Instance.new('Script', WackyWizards)
+
+	MM2.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+	end)
+end
+coroutine.wrap(XPUDM_fake_script)()
+local function KYVIAU_fake_script() -- Sharkbite.Script 
+	local script = Instance.new('Script', Sharkbite)
+
+	FunkyFriday.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+	end)
+end
+coroutine.wrap(KYVIAU_fake_script)()
+local function LETVWS_fake_script() -- BABFT.Script 
+	local script = Instance.new('Script', BABFT)
+
+	Sharkbite.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
+	end)
+end
+coroutine.wrap(LETVWS_fake_script)()
+local function RUII_fake_script() -- MM2.Script 
+	local script = Instance.new('Script', MM2)
+
+	PhantomForces.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(RUII_fake_script)()
+local function RCQGEN_fake_script() -- Bloxburg.Script 
+	local script = Instance.new('Script', Bloxburg)
+
+	Bloxburg.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://lifes-painful.ml/scripts/bloxburg/Bloxburgautofarm.lua", true))()
+	end)
+end
+coroutine.wrap(RCQGEN_fake_script)()
+local function KFTTU_fake_script() -- BreakingPointAimbot.Script 
+	local script = Instance.new('Script', BreakingPointAimbot)
+
+	SpeedSim.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Hviqz/Scripts/main/Speed%20Tycoon%20Simulator%3F", true))()
+	end)
+end
+coroutine.wrap(KFTTU_fake_script)()
+local function MBSQI_fake_script() -- BreakingPointLights.Script 
+	local script = Instance.new('Script', BreakingPointLights)
+
+	AdoptMe.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://bloxhub.xyz/script/loader"))()
+	end)
+end
+coroutine.wrap(MBSQI_fake_script)()
+local function GWBQEA_fake_script() -- ProjectLaz.Script 
+	local script = Instance.new('Script', ProjectLaz)
+
+	PaintballBIG.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(GWBQEA_fake_script)()
+local function NUPWFRV_fake_script() -- PaintballBIG.Script 
+	local script = Instance.new('Script', PaintballBIG)
+
+	MyResturant.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+	end)
+end
+coroutine.wrap(NUPWFRV_fake_script)()
+local function DSSIFFQ_fake_script() -- PhantomForces.Script 
+	local script = Instance.new('Script', PhantomForces)
+
+	Malltoon.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/Mall%20Tycoon", true))()
+	end)
+end
+coroutine.wrap(DSSIFFQ_fake_script)()
+local function QXHCSOL_fake_script() -- SpeedSim.Script 
+	local script = Instance.new('Script', SpeedSim)
+
+	MeepCity.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/MeepCity", true))()
+	end)
+end
+coroutine.wrap(QXHCSOL_fake_script)()
+local function OYYCMFU_fake_script() -- Malltoon.Script 
+	local script = Instance.new('Script', Malltoon)
+
+	SkyWars1.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/SkyWars1", true))()
+	end)
+end
+coroutine.wrap(OYYCMFU_fake_script)()
+local function PKGNER_fake_script() -- Mortem.Script 
+	local script = Instance.new('Script', Mortem)
+
+	SkyWars2.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/SkyWars2", true))()
+	end)
+end
+coroutine.wrap(PKGNER_fake_script)()
+local function KXMDPA_fake_script() -- AdoptMe.Script 
+	local script = Instance.new('Script', AdoptMe)
+
+	BABFT.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/scripts/raw/main/BABFT", true))()
+	end)
+end
+
+coroutine.wrap(IWMW_fake_script)()
+local function KDORI_fake_script() -- Gradient.LocalScript 
+	local script = Instance.new('LocalScript', Gradient)
+
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+end
+coroutine.wrap(KDORI_fake_script)()
