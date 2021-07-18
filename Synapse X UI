@@ -1,0 +1,244 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Synapse = Instance.new("Frame")
+local synapselogo = Instance.new("ImageLabel")
+local console = Instance.new("Frame")
+local num = Instance.new("TextLabel")
+local script = Instance.new("TextLabel")
+local scriptthing = Instance.new("Frame")
+local script_2 = Instance.new("TextLabel")
+local x = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Minimize = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local inj = Instance.new("TextButton")
+local exe = Instance.new("TextButton")
+local one = Instance.new("TextButton")
+local two = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Synapse.Name = "Synapse"
+Synapse.Parent = ScreenGui
+Synapse.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Synapse.Position = UDim2.new(0.253790915, 0, 0.319018394, 0)
+Synapse.Size = UDim2.new(0, 700, 0, 355)
+
+synapselogo.Name = "synapse logo"
+synapselogo.Parent = Synapse
+synapselogo.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+synapselogo.BorderSizePixel = 0
+synapselogo.Size = UDim2.new(0, 38, 0, 34)
+synapselogo.Image = "http://www.roblox.com/asset/?id=6221762983"
+
+console.Name = "console"
+console.Parent = Synapse
+console.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+console.BorderSizePixel = 0
+console.Position = UDim2.new(0.0457142852, 0, 0.183098584, 0)
+console.Size = UDim2.new(0, 528, 0, 254)
+
+num.Name = "num"
+num.Parent = console
+num.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+num.BackgroundTransparency = 1.000
+num.BorderSizePixel = 0
+num.Position = UDim2.new(-0.0625, 0, 0.013807252, 0)
+num.Size = UDim2.new(0, 32, 0, 43)
+num.Font = Enum.Font.SciFi
+num.Text = "1"
+num.TextColor3 = Color3.fromRGB(144, 144, 144)
+num.TextScaled = true
+num.TextSize = 14.000
+num.TextWrapped = true
+
+script.Name = "script"
+script.Parent = console
+script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script.BackgroundTransparency = 1.000
+script.BorderSizePixel = 0
+script.Position = UDim2.new(-0.00163419917, 0, 0.013807252, 0)
+script.Size = UDim2.new(0, 322, 0, 43)
+script.Font = Enum.Font.SciFi
+script.Text = "i wish console worked"
+script.TextColor3 = Color3.fromRGB(255, 255, 255)
+script.TextScaled = true
+script.TextSize = 14.000
+script.TextWrapped = true
+
+scriptthing.Name = "script thing"
+scriptthing.Parent = Synapse
+scriptthing.BackgroundColor3 = Color3.fromRGB(105, 105, 105)
+scriptthing.Position = UDim2.new(0, 0, 0.0957746506, 0)
+scriptthing.Size = UDim2.new(0, 100, 0, 31)
+
+script_2.Name = "script"
+script_2.Parent = scriptthing
+script_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script_2.BackgroundTransparency = 1.000
+script_2.BorderSizePixel = 0
+script_2.Size = UDim2.new(0, 68, 0, 31)
+script_2.Font = Enum.Font.SourceSans
+script_2.Text = "Script 1"
+script_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+script_2.TextScaled = true
+script_2.TextSize = 14.000
+script_2.TextWrapped = true
+
+x.Name = "x"
+x.Parent = scriptthing
+x.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+x.BackgroundTransparency = 1.000
+x.BorderSizePixel = 0
+x.Position = UDim2.new(0.769999981, 0, 0, 0)
+x.Size = UDim2.new(0, 23, 0, 31)
+x.Font = Enum.Font.SourceSans
+x.Text = "x"
+x.TextColor3 = Color3.fromRGB(255, 255, 255)
+x.TextScaled = true
+x.TextSize = 14.000
+x.TextWrapped = true
+
+TextLabel.Parent = Synapse
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.34857142, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 34)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Synapse X - v4.2.0"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Synapse
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.922857165, 0, -0.0535211265, 0)
+Minimize.Size = UDim2.new(0, 27, 0, 43)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = "_"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextScaled = true
+Minimize.TextSize = 14.000
+Minimize.TextWrapped = true
+
+close.Name = "close"
+close.Parent = Synapse
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.961428583, 0, -0.0140845068, 0)
+close.Size = UDim2.new(0, 27, 0, 43)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+
+inj.Name = "inj"
+inj.Parent = Synapse
+inj.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+inj.Position = UDim2.new(0.5857144, 0, 0.915492952, 0)
+inj.Size = UDim2.new(0, 128, 0, 30)
+inj.Font = Enum.Font.SourceSans
+inj.Text = "Attach"
+inj.TextColor3 = Color3.fromRGB(255, 255, 255)
+inj.TextScaled = true
+inj.TextSize = 14.000
+inj.TextWrapped = true
+
+exe.Name = "exe"
+exe.Parent = Synapse
+exe.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+exe.Position = UDim2.new(0.37857154, 0, 0.915492952, 0)
+exe.Size = UDim2.new(0, 128, 0, 30)
+exe.Font = Enum.Font.SourceSans
+exe.Text = "Execute"
+exe.TextColor3 = Color3.fromRGB(255, 255, 255)
+exe.TextScaled = true
+exe.TextSize = 14.000
+exe.TextWrapped = true
+
+one.Name = "one"
+one.Parent = Synapse
+one.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+one.Position = UDim2.new(0.811428666, 0, 0.183098584, 0)
+one.Size = UDim2.new(0, 124, 0, 38)
+one.Font = Enum.Font.SourceSans
+one.Text = "Gogang Hub Main"
+one.TextColor3 = Color3.fromRGB(255, 255, 255)
+one.TextScaled = true
+one.TextSize = 14.000
+one.TextWrapped = true
+
+two.Name = "two"
+two.Parent = Synapse
+two.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+two.Position = UDim2.new(0.811428666, 0, 0.312676042, 0)
+two.Size = UDim2.new(0, 124, 0, 38)
+two.Font = Enum.Font.SourceSans
+two.Text = "Gogang Hub OLD"
+two.TextColor3 = Color3.fromRGB(255, 255, 255)
+two.TextScaled = true
+two.TextSize = 14.000
+two.TextWrapped = true
+
+-- Scripts:
+
+local function FPOGVMD_fake_script() -- Minimize.LocalScript 
+	local script = Instance.new('LocalScript', Minimize)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(FPOGVMD_fake_script)()
+local function MCODL_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(MCODL_fake_script)()
+local function HHGGPFP_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	button = script.Parent
+	window = script.Parent.Parent
+	
+	function onClicked(GUI)
+		window:remove()
+	end
+	script.Parent.MouseButton1Click:connect(onClicked)
+end
+coroutine.wrap(HHGGPFP_fake_script)()
+
+one.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Gogang%20Hub"))()
+end)
+
+two.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Gogang%20Hub%20OLD%20Edition"))()
+end)
+
