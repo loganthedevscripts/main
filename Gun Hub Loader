@@ -98,7 +98,7 @@ local function TGPSQ_fake_script() -- TextButton.LocalScript
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Visible = false
 	end)
 end
 coroutine.wrap(TGPSQ_fake_script)()
