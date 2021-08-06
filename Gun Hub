@@ -806,3 +806,4 @@ end)
 SynX.Parent.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Synapse%20X%20UI", true))()
 end)
+
