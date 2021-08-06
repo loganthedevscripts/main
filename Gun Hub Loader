@@ -95,3 +95,7 @@ Continue.TextWrapped = true
 Continue.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
 end)
+
+TextButton.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+end)
