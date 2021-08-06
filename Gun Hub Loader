@@ -1,0 +1,97 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Loading = Instance.new("ScreenGui")
+local Back = Instance.new("ImageLabel")
+local Title = Instance.new("ImageLabel")
+local Name = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Button = Instance.new("ImageLabel")
+local Continue = Instance.new("TextButton")
+
+--Properties:
+
+Loading.Name = "Loading"
+Loading.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Back.Name = "Back"
+Back.Parent = Loading
+Back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Back.BackgroundTransparency = 1.000
+Back.Position = UDim2.new(0.442155272, 0, 0.429305911, 0)
+Back.Size = UDim2.new(0, 322, 0, 195)
+Back.Image = "rbxassetid://3570695787"
+Back.ImageColor3 = Color3.fromRGB(93, 61, 255)
+Back.ScaleType = Enum.ScaleType.Slice
+Back.SliceCenter = Rect.new(100, 100, 100, 100)
+Back.SliceScale = 0.120
+
+Title.Name = "Title"
+Title.Parent = Back
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.00240842463, 0, -0.00146327878, 0)
+Title.Size = UDim2.new(0, 322, 0, 40)
+Title.Image = "rbxassetid://3570695787"
+Title.ImageColor3 = Color3.fromRGB(67, 45, 190)
+Title.ScaleType = Enum.ScaleType.Slice
+Title.SliceCenter = Rect.new(100, 100, 100, 100)
+Title.SliceScale = 0.120
+
+Name.Name = "Name"
+Name.Parent = Title
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.189440995, 0, 0.0144752506, 0)
+Name.Size = UDim2.new(0, 200, 0, 39)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Gun Hub"
+Name.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+TextButton.Parent = Title
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.902823865, 0, -0.00255126948, 0)
+TextButton.Size = UDim2.new(0, 32, 0, 40)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+Button.Name = "Button"
+Button.Parent = Back
+Button.Active = true
+Button.AnchorPoint = Vector2.new(0.5, 0.5)
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BackgroundTransparency = 1.000
+Button.Position = UDim2.new(0.495341629, 0, 0.575865149, 0)
+Button.Selectable = true
+Button.Size = UDim2.new(0.381987721, 0, 0.2871795, 0)
+Button.Image = "rbxassetid://3570695787"
+Button.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Button.ScaleType = Enum.ScaleType.Slice
+Button.SliceCenter = Rect.new(100, 100, 100, 100)
+Button.SliceScale = 0.120
+
+Continue.Name = "Continue"
+Continue.Parent = Button
+Continue.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Continue.BackgroundTransparency = 1.000
+Continue.BorderSizePixel = 0
+Continue.Size = UDim2.new(0, 123, 0, 55)
+Continue.Font = Enum.Font.SciFi
+Continue.Text = "Continue"
+Continue.TextColor3 = Color3.fromRGB(129, 129, 129)
+Continue.TextScaled = true
+Continue.TextSize = 14.000
+Continue.TextWrapped = true
+
+Continue.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
+end)
