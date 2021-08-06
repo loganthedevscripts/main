@@ -9,7 +9,7 @@ local Title = Instance.new("ImageLabel")
 local Name = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local Button = Instance.new("ImageLabel")
-local Continue = Instance.new("TextButton")
+local Piss = Instance.new("TextButton")
 
 --Properties:
 
@@ -79,23 +79,34 @@ Button.ScaleType = Enum.ScaleType.Slice
 Button.SliceCenter = Rect.new(100, 100, 100, 100)
 Button.SliceScale = 0.120
 
-Continue.Name = "Continue"
-Continue.Parent = Button
-Continue.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Continue.BackgroundTransparency = 1.000
-Continue.BorderSizePixel = 0
-Continue.Size = UDim2.new(0, 123, 0, 55)
-Continue.Font = Enum.Font.SciFi
-Continue.Text = "Continue"
-Continue.TextColor3 = Color3.fromRGB(129, 129, 129)
-Continue.TextScaled = true
-Continue.TextSize = 14.000
-Continue.TextWrapped = true
+Piss.Name = "Piss"
+Piss.Parent = Button
+Piss.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Piss.BackgroundTransparency = 1.000
+Piss.BorderSizePixel = 0
+Piss.Size = UDim2.new(0, 123, 0, 55)
+Piss.Font = Enum.Font.SciFi
+Piss.Text = "Continue"
+Piss.TextColor3 = Color3.fromRGB(129, 129, 129)
+Piss.TextScaled = true
+Piss.TextSize = 14.000
+Piss.TextWrapped = true
 
-Continue.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
-end)
+-- Scripts:
 
-TextButton.Parent.MouseButton1Click:Connect(function()
-	script.Parent.Parent.Visible = false
-end)
+local function TGPSQ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(TGPSQ_fake_script)()
+local function IGJQTU_fake_script() -- Piss.Script 
+	local script = Instance.new('Script', Piss)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
+	end)
+end
+coroutine.wrap(IGJQTU_fake_script)()
