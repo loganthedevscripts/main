@@ -20,7 +20,7 @@ Back.Name = "Back"
 Back.Parent = Loading
 Back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Back.BackgroundTransparency = 1.000
-Back.Position = UDim2.new(0.704173207, 0, 0.610968292, 0)
+Back.Position = UDim2.new(0.232505202, 0, 0.604772508, 0)
 Back.Size = UDim2.new(0, 322, 0, 195)
 Back.Image = "rbxassetid://3570695787"
 Back.ImageColor3 = Color3.fromRGB(93, 61, 255)
@@ -44,7 +44,7 @@ Name.Name = "Name"
 Name.Parent = Title
 Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name.BackgroundTransparency = 1.000
-Name.Position = UDim2.new(0.189440995, 0, 0.0144752506, 0)
+Name.Position = UDim2.new(0.164596274, 0, -0.0105247498, 0)
 Name.Size = UDim2.new(0, 200, 0, 39)
 Name.Font = Enum.Font.SourceSans
 Name.Text = "Gun Hub "
@@ -94,27 +94,27 @@ Piss.TextWrapped = true
 
 -- Scripts:
 
-local function JDBMU_fake_script() -- TextButton.LocalScript 
+local function OCLZ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(JDBMU_fake_script)()
-local function TPLC_fake_script() -- Piss.ugh 
+coroutine.wrap(OCLZ_fake_script)()
+local function EEWKY_fake_script() -- Piss.ugh 
 	local script = Instance.new('LocalScript', Piss)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(TPLC_fake_script)()
-local function IKYIE_fake_script() -- Piss.loadit 
+coroutine.wrap(EEWKY_fake_script)()
+local function MTTM_fake_script() -- Piss.loadit 
 	local script = Instance.new('LocalScript', Piss)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
 	end)
 end
-coroutine.wrap(IKYIE_fake_script)()
+coroutine.wrap(MTTM_fake_script)()
