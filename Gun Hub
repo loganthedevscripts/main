@@ -11,6 +11,7 @@ local SwordGames = Instance.new("TextButton")
 local PL = Instance.new("TextButton")
 local Misc = Instance.new("TextButton")
 local Hubs = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
 local Title = Instance.new("ImageLabel")
 local Name = Instance.new("TextLabel")
 local Gun = Instance.new("ImageLabel")
@@ -38,6 +39,7 @@ local FNF = Instance.new("TextButton")
 local NinjaLeg2 = Instance.new("TextButton")
 local NinjaLeg1 = Instance.new("TextButton")
 local Hang2 = Instance.new("TextButton")
+local PETSIMX = Instance.new("TextButton")
 local Hubs_2 = Instance.new("Frame")
 local Gogang = Instance.new("TextButton")
 local OldGogang = Instance.new("TextButton")
@@ -141,6 +143,19 @@ Hubs.TextScaled = true
 Hubs.TextSize = 14.000
 Hubs.TextWrapped = true
 
+Credits.Name = "Credits"
+Credits.Parent = Pages
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0, 0, 0.754098415, 0)
+Credits.Size = UDim2.new(0, 111, 0, 26)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
 Title.Name = "Title"
 Title.Parent = GunHub
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -179,6 +194,7 @@ Guns.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Guns.BackgroundTransparency = 1.000
 Guns.Position = UDim2.new(0.209433958, 0, 0.140983611, 0)
 Guns.Size = UDim2.new(0, 419, 0, 262)
+Guns.Visible = false
 
 BIGP.Name = "BIGP"
 BIGP.Parent = Guns
@@ -334,7 +350,6 @@ Misc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Misc_2.BackgroundTransparency = 1.000
 Misc_2.Position = UDim2.new(0.209433958, 0, 0.140983611, 0)
 Misc_2.Size = UDim2.new(0, 419, 0, 262)
-Misc_2.Visible = false
 
 Jailbreak.Name = "Jailbreak"
 Jailbreak.Parent = Misc_2
@@ -444,6 +459,18 @@ Hang2.TextScaled = true
 Hang2.TextSize = 14.000
 Hang2.TextWrapped = true
 
+PETSIMX.Name = "PETSIMX"
+PETSIMX.Parent = Misc_2
+PETSIMX.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+PETSIMX.Position = UDim2.new(0.0310262442, 0, 0.515267134, 0)
+PETSIMX.Size = UDim2.new(0, 113, 0, 35)
+PETSIMX.Font = Enum.Font.SourceSans
+PETSIMX.Text = "Pet Simulator X"
+PETSIMX.TextColor3 = Color3.fromRGB(0, 0, 0)
+PETSIMX.TextScaled = true
+PETSIMX.TextSize = 14.000
+PETSIMX.TextWrapped = true
+
 Hubs_2.Name = "Hubs"
 Hubs_2.Parent = GunHub
 Hubs_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -549,7 +576,7 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function AWIUHJT_fake_script() -- GunGames.GG 
+local function IZVDH_fake_script() -- GunGames.GG 
 	local script = Instance.new('Script', GunGames)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -561,8 +588,8 @@ local function AWIUHJT_fake_script() -- GunGames.GG
 		wait(0.1)
 	end)
 end
-coroutine.wrap(AWIUHJT_fake_script)()
-local function NXRGA_fake_script() -- SwordGames.SG 
+coroutine.wrap(IZVDH_fake_script)()
+local function EHOTCY_fake_script() -- SwordGames.SG 
 	local script = Instance.new('Script', SwordGames)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -574,8 +601,8 @@ local function NXRGA_fake_script() -- SwordGames.SG
 		wait(0.1)
 	end)
 end
-coroutine.wrap(NXRGA_fake_script)()
-local function DJHQXX_fake_script() -- PL.PL 
+coroutine.wrap(EHOTCY_fake_script)()
+local function NLUGY_fake_script() -- PL.PL 
 	local script = Instance.new('Script', PL)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -587,8 +614,8 @@ local function DJHQXX_fake_script() -- PL.PL
 		wait(0.1)
 	end)
 end
-coroutine.wrap(DJHQXX_fake_script)()
-local function MFDIA_fake_script() -- Misc.M 
+coroutine.wrap(NLUGY_fake_script)()
+local function LCNWTQA_fake_script() -- Misc.M 
 	local script = Instance.new('Script', Misc)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -600,8 +627,8 @@ local function MFDIA_fake_script() -- Misc.M
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MFDIA_fake_script)()
-local function YYNST_fake_script() -- Hubs.HUBS 
+coroutine.wrap(LCNWTQA_fake_script)()
+local function XJHGP_fake_script() -- Hubs.HUBS 
 	local script = Instance.new('Script', Hubs)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -613,8 +640,16 @@ local function YYNST_fake_script() -- Hubs.HUBS
 		wait(0.1)
 	end)
 end
-coroutine.wrap(YYNST_fake_script)()
-local function GJFA_fake_script() -- Title.LocalScript 
+coroutine.wrap(XJHGP_fake_script)()
+local function VXYRK_fake_script() -- Credits.creds 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/CreditsForGunHub"))()
+	end)
+end
+coroutine.wrap(VXYRK_fake_script)()
+local function YWHKC_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	local UIS = game:GetService('UserInputService')
@@ -689,121 +724,240 @@ local function GJFA_fake_script() -- Title.LocalScript
 	
 	
 end
-coroutine.wrap(GJFA_fake_script)()
-local function JAWMPNF_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(YWHKC_fake_script)()
+local function KTZQTHU_fake_script() -- BIGP.bigp 
+	local script = Instance.new('LocalScript', BIGP)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(KTZQTHU_fake_script)()
+local function AZWTZT_fake_script() -- ProjLaz.projlaz 
+	local script = Instance.new('LocalScript', ProjLaz)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	end)
+end
+coroutine.wrap(AZWTZT_fake_script)()
+local function QYHQOB_fake_script() -- PF.pf 
+	local script = Instance.new('LocalScript', PF)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(QYHQOB_fake_script)()
+local function MINCHP_fake_script() -- BPLights.bplight 
+	local script = Instance.new('LocalScript', BPLights)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:GetObjects("rbxassetid://1014703659")[1].Source)()
+	end)
+end
+coroutine.wrap(MINCHP_fake_script)()
+local function LNKNIQX_fake_script() -- BPBot.bpbot 
+	local script = Instance.new('LocalScript', BPBot)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/MLPypHYv', true))()
+	end)
+end
+coroutine.wrap(LNKNIQX_fake_script)()
+local function OWLQ_fake_script() -- MM2.m2 
+	local script = Instance.new('LocalScript', MM2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+	end)
+end
+coroutine.wrap(OWLQ_fake_script)()
+local function ARKVG_fake_script() -- Skywars.skywars 
+	local script = Instance.new('LocalScript', Skywars)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DohmBoyOG/Script-Dump/main/OPSkywarsGUI_NolixXDohmScripts_Public.lua"))()
+	end)
+end
+coroutine.wrap(ARKVG_fake_script)()
+local function PXXX_fake_script() -- Mortem.mortem 
+	local script = Instance.new('LocalScript', Mortem)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://risa.gq/Samuel/Mortem.txt"))()
+	end)
+end
+coroutine.wrap(PXXX_fake_script)()
+local function MZCXD_fake_script() -- Prevail.ewvail 
+	local script = Instance.new('LocalScript', Prevail)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+	end)
+end
+coroutine.wrap(MZCXD_fake_script)()
+local function NLFOTM_fake_script() -- Admin.adminpl 
+	local script = Instance.new('LocalScript', Admin)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+	end)
+end
+coroutine.wrap(NLFOTM_fake_script)()
+local function QEYA_fake_script() -- Vynixiu.vyn 
+	local script = Instance.new('LocalScript', Vynixiu)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
+	end)
+end
+coroutine.wrap(QEYA_fake_script)()
+local function HSGI_fake_script() -- Jailbreak.jb 
+	local script = Instance.new('LocalScript', Jailbreak)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+	end)
+end
+coroutine.wrap(HSGI_fake_script)()
+local function BUML_fake_script() -- Islands.islands 
+	local script = Instance.new('LocalScript', Islands)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+	end)
+end
+coroutine.wrap(BUML_fake_script)()
+local function BOFT_fake_script() -- Piggy.piggo 
+	local script = Instance.new('LocalScript', Piggy)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/scripts/main/piggy'),true))()
+	end)
+end
+coroutine.wrap(BOFT_fake_script)()
+local function BNVI_fake_script() -- Sharkbite.sharc 
+	local script = Instance.new('LocalScript', Sharkbite)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
+	end)
+end
+coroutine.wrap(BNVI_fake_script)()
+local function CSGTNP_fake_script() -- MyRes.myres 
+	local script = Instance.new('LocalScript', MyRes)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+	end)
+end
+coroutine.wrap(CSGTNP_fake_script)()
+local function FMCYQFF_fake_script() -- FNF.fnf 
+	local script = Instance.new('LocalScript', FNF)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/scripts/main/funky'),true))()
+	end)
+end
+coroutine.wrap(FMCYQFF_fake_script)()
+local function BBDLTJK_fake_script() -- NinjaLeg2.ninleg2 
+	local script = Instance.new('LocalScript', NinjaLeg2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/Obfuscated/main/NinjaLegends2.lua" ,true))()
+	end)
+end
+coroutine.wrap(BBDLTJK_fake_script)()
+local function KCKJYD_fake_script() -- NinjaLeg1.ninleg1 
+	local script = Instance.new('LocalScript', NinjaLeg1)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/potatoman42o/potato-hub-mmmm/main/init%20-%20obf.lua"))()
+	end)
+end
+coroutine.wrap(KCKJYD_fake_script)()
+local function XTZZP_fake_script() -- Hang2.hang2 
+	local script = Instance.new('LocalScript', Hang2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		(print)"im so sowwy i cant add this cus its to complex"
+	end)
+end
+coroutine.wrap(XTZZP_fake_script)()
+local function GLPHG_fake_script() -- PETSIMX.petsimx 
+	local script = Instance.new('LocalScript', PETSIMX)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
+	end)
+end
+coroutine.wrap(GLPHG_fake_script)()
+local function VQGJC_fake_script() -- Gogang.gogang 
+	local script = Instance.new('LocalScript', Gogang)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/main/main/Gogang%20Hub",true))()
+	end)
+end
+coroutine.wrap(VQGJC_fake_script)()
+local function PLONRS_fake_script() -- OldGogang.oldgang 
+	local script = Instance.new('LocalScript', OldGogang)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Gogang%20Hub%20OLD%20Edition",true))()
+	end)
+end
+coroutine.wrap(PLONRS_fake_script)()
+local function IKVWRTG_fake_script() -- Owl.owl 
+	local script = Instance.new('LocalScript', Owl)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+end
+coroutine.wrap(IKVWRTG_fake_script)()
+local function CVNDM_fake_script() -- Dark.dark 
+	local script = Instance.new('LocalScript', Dark)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(CVNDM_fake_script)()
+local function PUDGL_fake_script() -- Bruh.Bbruh 
+	local script = Instance.new('LocalScript', Bruh)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	end)
+end
+coroutine.wrap(PUDGL_fake_script)()
+local function YCWKJI_fake_script() -- Hades.hades 
+	local script = Instance.new('LocalScript', Hades)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Soffware/3kTMd/main/HadesHub.lua"),true))()
+	end)
+end
+coroutine.wrap(YCWKJI_fake_script)()
+local function LITVJI_fake_script() -- SynX.synx 
+	local script = Instance.new('LocalScript', SynX)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Synapse%20X%20UI", true))()
+	end)
+end
+coroutine.wrap(LITVJI_fake_script)()
+local function OASZT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(JAWMPNF_fake_script)()
-
-BIGP.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
-end)
-
-ProjLaz.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
-end)
-
-PF.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
-end)
-
-BPLights.Parent.MouseButton1Down:connect(function()
-	loadstring(game:GetObjects("rbxassetid://1014703659")[1].Source)()
-end)
-
-BPBot.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://pastebin.com/raw/MLPypHYv', true))()
-end)
-
-MM2.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
-end)
-
-Skywars.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
-end)
-
-Mortem.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://risa.gq/Samuel/Mortem.txt"))()
-end)
-
-Prevail.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
-end)
-
-Admin.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
-end)
-
-Vynixiu.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
-end)
-
-Jailbreak.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
-end)
-
-Islands.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
-end)
-
-Piggy.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/scripts/main/piggy'),true))()
-end)
-
-Sharkbite.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
-end)
-
-MyRes.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
-end)
-
-FNF.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/scripts/main/funky'),true))()
-end)
-
-NinjaLeg2.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/Obfuscated/main/NinjaLegends2.lua" ,true))()
-end)
-
-NinjaLeg1.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/potatoman42o/potato-hub-mmmm/main/init%20-%20obf.lua"))()
-end)
-
-Hang2.Parent.MouseButton1Down:connect(function()
-	(print)"im so sowwy i cant add this cus its to complex"
-end)
-
-Gogang.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/main/main/Gogang%20Hub",true))()
-end)
-
-OldGogang.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Gogang%20Hub%20OLD%20Edition",true))()
-end)
-
-Owl.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
-end)
-
-Dark.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
-end)
-
-Bruh.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
-end)
-
-Hades.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Soffware/3kTMd/main/HadesHub.lua"),true))()
-end)
-
-SynX.Parent.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Synapse%20X%20UI", true))()
-end)
-
+coroutine.wrap(OASZT_fake_script)()
