@@ -94,35 +94,27 @@ Piss.TextWrapped = true
 
 -- Scripts:
 
-local function HZNQP_fake_script() -- TextButton.LocalScript 
+local function BWMUEQM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(HZNQP_fake_script)()
-local function XCWBZWH_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+coroutine.wrap(BWMUEQM_fake_script)()
+local function MIXWMV_fake_script() -- Piss.ugh 
+	local script = Instance.new('LocalScript', Piss)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(MIXWMV_fake_script)()
+local function RDLHGLZ_fake_script() -- Piss.loadit 
+	local script = Instance.new('LocalScript', Piss)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub%20EZ%20Mode'),true))()
 	end)
 end
-coroutine.wrap(XCWBZWH_fake_script)()
-local function QVQYE_fake_script() -- Piss.Script 
-	local script = Instance.new('Script', Piss)
-
-	script.Parent.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
-	end)
-end
-coroutine.wrap(QVQYE_fake_script)()
-local function SFDC_fake_script() -- Piss.ugh 
-	local script = Instance.new('LocalScript', Piss)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(SFDC_fake_script)()
+coroutine.wrap(RDLHGLZ_fake_script)()
