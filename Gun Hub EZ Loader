@@ -20,7 +20,7 @@ Back.Name = "Back"
 Back.Parent = Loadingez
 Back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Back.BackgroundTransparency = 1.000
-Back.Position = UDim2.new(0.705229759, 0, 0.428449005, 0)
+Back.Position = UDim2.new(0.269475579, 0, 0.416057438, 0)
 Back.Size = UDim2.new(0, 322, 0, 195)
 Back.Image = "rbxassetid://3570695787"
 Back.ImageColor3 = Color3.fromRGB(93, 61, 255)
@@ -94,27 +94,27 @@ Piss.TextWrapped = true
 
 -- Scripts:
 
-local function BWMUEQM_fake_script() -- TextButton.LocalScript 
+local function LFPTFCT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(BWMUEQM_fake_script)()
-local function MIXWMV_fake_script() -- Piss.ugh 
+coroutine.wrap(LFPTFCT_fake_script)()
+local function TOUJNN_fake_script() -- Piss.ugh 
 	local script = Instance.new('LocalScript', Piss)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(MIXWMV_fake_script)()
-local function RDLHGLZ_fake_script() -- Piss.loadit 
+coroutine.wrap(TOUJNN_fake_script)()
+local function FVBNKBS_fake_script() -- Piss.loadit 
 	local script = Instance.new('LocalScript', Piss)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub%20EZ%20Mode'),true))()
 	end)
 end
-coroutine.wrap(RDLHGLZ_fake_script)()
+coroutine.wrap(FVBNKBS_fake_script)()
