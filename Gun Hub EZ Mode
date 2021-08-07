@@ -1,0 +1,841 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TheGUIv2 = Instance.new("ScreenGui")
+local GunHub = Instance.new("ImageLabel")
+local Pages = Instance.new("ImageLabel")
+local Credits = Instance.new("TextButton")
+local Title = Instance.new("ImageLabel")
+local Name = Instance.new("TextLabel")
+local Gun = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local BIGP = Instance.new("TextButton")
+local BPBot = Instance.new("TextButton")
+local BPLights = Instance.new("TextButton")
+local PF = Instance.new("TextButton")
+local ProjLaz = Instance.new("TextButton")
+local GG = Instance.new("TextLabel")
+local SG = Instance.new("TextLabel")
+local MM2 = Instance.new("TextButton")
+local Skywars = Instance.new("TextButton")
+local Mortem = Instance.new("TextButton")
+local MISC = Instance.new("TextLabel")
+local FNF = Instance.new("TextButton")
+local Sharkbite = Instance.new("TextButton")
+local Islands = Instance.new("TextButton")
+local Jailbreak = Instance.new("TextButton")
+local MyRes = Instance.new("TextButton")
+local NinjaLeg1 = Instance.new("TextButton")
+local NinjaLeg2 = Instance.new("TextButton")
+local Piggy = Instance.new("TextButton")
+local HUBS = Instance.new("TextLabel")
+local Bruh = Instance.new("TextButton")
+local Dark = Instance.new("TextButton")
+local OldGogang = Instance.new("TextButton")
+local Gogang = Instance.new("TextButton")
+local Hades = Instance.new("TextButton")
+local Owl = Instance.new("TextButton")
+local SynX = Instance.new("TextButton")
+local PL = Instance.new("TextLabel")
+local Admin = Instance.new("TextButton")
+local Prevail = Instance.new("TextButton")
+local Vynixiu = Instance.new("TextButton")
+local Hang2 = Instance.new("TextButton")
+
+--Properties:
+
+TheGUIv2.Name = "The GUI v2"
+TheGUIv2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+GunHub.Name = "GunHub"
+GunHub.Parent = TheGUIv2
+GunHub.BackgroundColor3 = Color3.fromRGB(131, 255, 64)
+GunHub.BackgroundTransparency = 1.000
+GunHub.Position = UDim2.new(0.571884274, 0, 0.305307329, 0)
+GunHub.Size = UDim2.new(0, 530, 0, 305)
+GunHub.Image = "rbxassetid://3570695787"
+GunHub.ImageColor3 = Color3.fromRGB(40, 187, 240)
+GunHub.ScaleType = Enum.ScaleType.Slice
+GunHub.SliceCenter = Rect.new(100, 100, 100, 100)
+GunHub.SliceScale = 0.120
+
+Pages.Name = "Pages"
+Pages.Parent = GunHub
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pages.BackgroundTransparency = 1.000
+Pages.Size = UDim2.new(0, 111, 0, 305)
+Pages.Image = "rbxassetid://3570695787"
+Pages.ImageColor3 = Color3.fromRGB(29, 118, 136)
+Pages.ScaleType = Enum.ScaleType.Slice
+Pages.SliceCenter = Rect.new(100, 100, 100, 100)
+Pages.SliceScale = 0.120
+
+Credits.Name = "Credits"
+Credits.Parent = Pages
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0, 0, 0.140983611, 0)
+Credits.Size = UDim2.new(0, 111, 0, 26)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = GunHub
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 530, 0, 43)
+Title.Image = "rbxassetid://3570695787"
+Title.ImageColor3 = Color3.fromRGB(42, 164, 191)
+Title.ScaleType = Enum.ScaleType.Slice
+Title.SliceCenter = Rect.new(100, 100, 100, 100)
+Title.SliceScale = 0.120
+
+Name.Name = "Name"
+Name.Parent = Title
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.311320752, 0, -0.0930232555, 0)
+Name.Size = UDim2.new(0, 200, 0, 50)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Gun Hub"
+Name.TextColor3 = Color3.fromRGB(50, 50, 50)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+Gun.Name = "Gun"
+Gun.Parent = Title
+Gun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gun.BackgroundTransparency = 1.000
+Gun.Position = UDim2.new(0, 0, 0.0697674751, 0)
+Gun.Size = UDim2.new(0, 43, 0, 43)
+Gun.Image = "http://www.roblox.com/asset/?id=4698227909"
+
+TextButton.Parent = GunHub
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.895475984, 0, -0.00174088031, 0)
+TextButton.Size = UDim2.new(0, 55, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+ScrollingFrame.Parent = GunHub
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.209433958, 0, 0.144262299, 0)
+ScrollingFrame.Size = UDim2.new(0, 419, 0, 258)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 428.25)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2.25, 0)
+
+BIGP.Name = "BIGP"
+BIGP.Parent = ScrollingFrame
+BIGP.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+BIGP.Position = UDim2.new(0.0286396183, 0, 0.057440877, 0)
+BIGP.Size = UDim2.new(0, 113, 0, 35)
+BIGP.Font = Enum.Font.SourceSans
+BIGP.Text = "BIG Paintball"
+BIGP.TextColor3 = Color3.fromRGB(0, 0, 0)
+BIGP.TextScaled = true
+BIGP.TextSize = 14.000
+BIGP.TextWrapped = true
+
+BPBot.Name = "BPBot"
+BPBot.Parent = ScrollingFrame
+BPBot.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+BPBot.Position = UDim2.new(0.336515486, 0, 0.0565986708, 0)
+BPBot.Size = UDim2.new(0, 113, 0, 35)
+BPBot.Font = Enum.Font.SourceSans
+BPBot.Text = "Breaking Point Aimbot"
+BPBot.TextColor3 = Color3.fromRGB(0, 0, 0)
+BPBot.TextScaled = true
+BPBot.TextSize = 14.000
+BPBot.TextWrapped = true
+
+BPLights.Name = "BPLights"
+BPLights.Parent = ScrollingFrame
+BPLights.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+BPLights.Position = UDim2.new(0.642004788, 0, 0.0565986708, 0)
+BPLights.Size = UDim2.new(0, 113, 0, 35)
+BPLights.Font = Enum.Font.SourceSans
+BPLights.Text = "Breaking Point Lights"
+BPLights.TextColor3 = Color3.fromRGB(0, 0, 0)
+BPLights.TextScaled = true
+BPLights.TextSize = 14.000
+BPLights.TextWrapped = true
+
+PF.Name = "PF"
+PF.Parent = ScrollingFrame
+PF.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+PF.Position = UDim2.new(0.0286396146, 0, 0.118916266, 0)
+PF.Size = UDim2.new(0, 113, 0, 35)
+PF.Font = Enum.Font.SourceSans
+PF.Text = "Phantom Forces"
+PF.TextColor3 = Color3.fromRGB(0, 0, 0)
+PF.TextScaled = true
+PF.TextSize = 14.000
+PF.TextWrapped = true
+
+ProjLaz.Name = "ProjLaz"
+ProjLaz.Parent = ScrollingFrame
+ProjLaz.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+ProjLaz.Position = UDim2.new(0.336515486, 0, 0.118916281, 0)
+ProjLaz.Size = UDim2.new(0, 113, 0, 35)
+ProjLaz.Font = Enum.Font.SourceSans
+ProjLaz.Text = "Project Lazorus"
+ProjLaz.TextColor3 = Color3.fromRGB(0, 0, 0)
+ProjLaz.TextScaled = true
+ProjLaz.TextSize = 14.000
+ProjLaz.TextWrapped = true
+
+GG.Name = "GG"
+GG.Parent = ScrollingFrame
+GG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GG.BackgroundTransparency = 1.000
+GG.Position = UDim2.new(0, 0, -0.00419621635, 0)
+GG.Size = UDim2.new(0, 409, 0, 47)
+GG.Font = Enum.Font.SourceSans
+GG.Text = "Gun Games"
+GG.TextColor3 = Color3.fromRGB(0, 0, 0)
+GG.TextScaled = true
+GG.TextSize = 14.000
+GG.TextWrapped = true
+
+SG.Name = "SG"
+SG.Parent = ScrollingFrame
+SG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SG.BackgroundTransparency = 1.000
+SG.Position = UDim2.new(0, 0, 0.164656237, 0)
+SG.Size = UDim2.new(0, 409, 0, 47)
+SG.Font = Enum.Font.SourceSans
+SG.Text = "Sword Games"
+SG.TextColor3 = Color3.fromRGB(0, 0, 0)
+SG.TextScaled = true
+SG.TextSize = 14.000
+SG.TextWrapped = true
+
+MM2.Name = "MM2"
+MM2.Parent = ScrollingFrame
+MM2.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+MM2.Position = UDim2.new(0.0286396183, 0, 0.22940807, 0)
+MM2.Size = UDim2.new(0, 113, 0, 35)
+MM2.Font = Enum.Font.SourceSans
+MM2.Text = "MM2"
+MM2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MM2.TextScaled = true
+MM2.TextSize = 14.000
+MM2.TextWrapped = true
+
+Skywars.Name = "Skywars"
+Skywars.Parent = ScrollingFrame
+Skywars.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Skywars.Position = UDim2.new(0.336515516, 0, 0.22940807, 0)
+Skywars.Size = UDim2.new(0, 113, 0, 35)
+Skywars.Font = Enum.Font.SourceSans
+Skywars.Text = "Skywars"
+Skywars.TextColor3 = Color3.fromRGB(0, 0, 0)
+Skywars.TextScaled = true
+Skywars.TextSize = 14.000
+Skywars.TextWrapped = true
+
+Mortem.Name = "Mortem"
+Mortem.Parent = ScrollingFrame
+Mortem.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Mortem.Position = UDim2.new(0.642004728, 0, 0.231703192, 0)
+Mortem.Size = UDim2.new(0, 113, 0, 35)
+Mortem.Font = Enum.Font.SourceSans
+Mortem.Text = "Mortem Mortallium"
+Mortem.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mortem.TextScaled = true
+Mortem.TextSize = 14.000
+Mortem.TextWrapped = true
+
+MISC.Name = "MISC"
+MISC.Parent = ScrollingFrame
+MISC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MISC.BackgroundTransparency = 1.000
+MISC.Position = UDim2.new(0, 0, 0.269574285, 0)
+MISC.Size = UDim2.new(0, 409, 0, 47)
+MISC.Font = Enum.Font.SourceSans
+MISC.Text = "Misc"
+MISC.TextColor3 = Color3.fromRGB(0, 0, 0)
+MISC.TextScaled = true
+MISC.TextSize = 14.000
+MISC.TextWrapped = true
+
+FNF.Name = "FNF"
+FNF.Parent = ScrollingFrame
+FNF.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+FNF.Position = UDim2.new(0.0286396146, 0, 0.337935209, 0)
+FNF.Size = UDim2.new(0, 113, 0, 35)
+FNF.Font = Enum.Font.SourceSans
+FNF.Text = "Funky Friday"
+FNF.TextColor3 = Color3.fromRGB(0, 0, 0)
+FNF.TextScaled = true
+FNF.TextSize = 14.000
+FNF.TextWrapped = true
+
+Sharkbite.Name = "Sharkbite"
+Sharkbite.Parent = ScrollingFrame
+Sharkbite.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Sharkbite.Position = UDim2.new(0.336515516, 0, 0.337935179, 0)
+Sharkbite.Size = UDim2.new(0, 113, 0, 35)
+Sharkbite.Font = Enum.Font.SourceSans
+Sharkbite.Text = "Sharkbite"
+Sharkbite.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sharkbite.TextScaled = true
+Sharkbite.TextSize = 14.000
+Sharkbite.TextWrapped = true
+
+Islands.Name = "Islands"
+Islands.Parent = ScrollingFrame
+Islands.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Islands.Position = UDim2.new(0.642004728, 0, 0.338260591, 0)
+Islands.Size = UDim2.new(0, 113, 0, 35)
+Islands.Font = Enum.Font.SourceSans
+Islands.Text = "Islands"
+Islands.TextColor3 = Color3.fromRGB(0, 0, 0)
+Islands.TextScaled = true
+Islands.TextSize = 14.000
+Islands.TextWrapped = true
+
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = ScrollingFrame
+Jailbreak.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Jailbreak.Position = UDim2.new(0.0286396146, 0, 0.397604823, 0)
+Jailbreak.Size = UDim2.new(0, 113, 0, 35)
+Jailbreak.Font = Enum.Font.SourceSans
+Jailbreak.Text = "Jailbreak"
+Jailbreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jailbreak.TextScaled = true
+Jailbreak.TextSize = 14.000
+Jailbreak.TextWrapped = true
+
+MyRes.Name = "MyRes"
+MyRes.Parent = ScrollingFrame
+MyRes.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+MyRes.Position = UDim2.new(0.336515486, 0, 0.398590922, 0)
+MyRes.Size = UDim2.new(0, 113, 0, 35)
+MyRes.Font = Enum.Font.SourceSans
+MyRes.Text = "My Resturant"
+MyRes.TextColor3 = Color3.fromRGB(0, 0, 0)
+MyRes.TextScaled = true
+MyRes.TextSize = 14.000
+MyRes.TextWrapped = true
+
+NinjaLeg1.Name = "NinjaLeg1"
+NinjaLeg1.Parent = ScrollingFrame
+NinjaLeg1.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+NinjaLeg1.Position = UDim2.new(0.642004728, 0, 0.398030281, 0)
+NinjaLeg1.Size = UDim2.new(0, 113, 0, 35)
+NinjaLeg1.Font = Enum.Font.SourceSans
+NinjaLeg1.Text = "Ninja Legends 1"
+NinjaLeg1.TextColor3 = Color3.fromRGB(0, 0, 0)
+NinjaLeg1.TextScaled = true
+NinjaLeg1.TextSize = 14.000
+NinjaLeg1.TextWrapped = true
+
+NinjaLeg2.Name = "NinjaLeg2"
+NinjaLeg2.Parent = ScrollingFrame
+NinjaLeg2.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+NinjaLeg2.Position = UDim2.new(0.028639609, 0, 0.459997475, 0)
+NinjaLeg2.Size = UDim2.new(0, 113, 0, 35)
+NinjaLeg2.Font = Enum.Font.SourceSans
+NinjaLeg2.Text = "Ninja Legends 2"
+NinjaLeg2.TextColor3 = Color3.fromRGB(0, 0, 0)
+NinjaLeg2.TextScaled = true
+NinjaLeg2.TextSize = 14.000
+NinjaLeg2.TextWrapped = true
+
+Piggy.Name = "Piggy"
+Piggy.Parent = ScrollingFrame
+Piggy.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Piggy.Position = UDim2.new(0.336515486, 0, 0.459572017, 0)
+Piggy.Size = UDim2.new(0, 113, 0, 35)
+Piggy.Font = Enum.Font.SourceSans
+Piggy.Text = "Piggy"
+Piggy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Piggy.TextScaled = true
+Piggy.TextSize = 14.000
+Piggy.TextWrapped = true
+
+HUBS.Name = "HUBS"
+HUBS.Parent = ScrollingFrame
+HUBS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HUBS.BackgroundTransparency = 1.000
+HUBS.Position = UDim2.new(0, 0, 0.513326526, 0)
+HUBS.Size = UDim2.new(0, 409, 0, 47)
+HUBS.Font = Enum.Font.SourceSans
+HUBS.Text = "Hubs"
+HUBS.TextColor3 = Color3.fromRGB(0, 0, 0)
+HUBS.TextScaled = true
+HUBS.TextSize = 14.000
+HUBS.TextWrapped = true
+
+Bruh.Name = "Bruh"
+Bruh.Parent = ScrollingFrame
+Bruh.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Bruh.Position = UDim2.new(0.0286395848, 0, 0.591013551, 0)
+Bruh.Size = UDim2.new(0, 113, 0, 35)
+Bruh.Font = Enum.Font.SourceSans
+Bruh.Text = "Bruh Hub"
+Bruh.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bruh.TextScaled = true
+Bruh.TextSize = 14.000
+Bruh.TextWrapped = true
+
+Dark.Name = "Dark"
+Dark.Parent = ScrollingFrame
+Dark.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Dark.Position = UDim2.new(0.336515486, 0, 0.589738369, 0)
+Dark.Size = UDim2.new(0, 113, 0, 35)
+Dark.Font = Enum.Font.SourceSans
+Dark.Text = "Dark Hub"
+Dark.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dark.TextScaled = true
+Dark.TextSize = 14.000
+Dark.TextWrapped = true
+
+OldGogang.Name = "OldGogang"
+OldGogang.Parent = ScrollingFrame
+OldGogang.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+OldGogang.Position = UDim2.new(0.642004788, 0, 0.590245962, 0)
+OldGogang.Size = UDim2.new(0, 113, 0, 35)
+OldGogang.Font = Enum.Font.SourceSans
+OldGogang.Text = "Old Gogang"
+OldGogang.TextColor3 = Color3.fromRGB(0, 0, 0)
+OldGogang.TextScaled = true
+OldGogang.TextSize = 14.000
+OldGogang.TextWrapped = true
+
+Gogang.Name = "Gogang"
+Gogang.Parent = ScrollingFrame
+Gogang.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Gogang.Position = UDim2.new(0.642004728, 0, 0.65545541, 0)
+Gogang.Size = UDim2.new(0, 113, 0, 35)
+Gogang.Font = Enum.Font.SourceSans
+Gogang.Text = "Gogang"
+Gogang.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gogang.TextScaled = true
+Gogang.TextSize = 14.000
+Gogang.TextWrapped = true
+
+Hades.Name = "Hades"
+Hades.Parent = ScrollingFrame
+Hades.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Hades.Position = UDim2.new(0.0286395848, 0, 0.719450951, 0)
+Hades.Size = UDim2.new(0, 113, 0, 35)
+Hades.Font = Enum.Font.SourceSans
+Hades.Text = "Hades Hub"
+Hades.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hades.TextScaled = true
+Hades.TextSize = 14.000
+Hades.TextWrapped = true
+
+Owl.Name = "Owl"
+Owl.Parent = ScrollingFrame
+Owl.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Owl.Position = UDim2.new(0.336515456, 0, 0.65545547, 0)
+Owl.Size = UDim2.new(0, 113, 0, 35)
+Owl.Font = Enum.Font.SourceSans
+Owl.Text = "Owl Hub"
+Owl.TextColor3 = Color3.fromRGB(0, 0, 0)
+Owl.TextScaled = true
+Owl.TextSize = 14.000
+Owl.TextWrapped = true
+
+SynX.Name = "SynX"
+SynX.Parent = ScrollingFrame
+SynX.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+SynX.Position = UDim2.new(0.0286395848, 0, 0.656587303, 0)
+SynX.Size = UDim2.new(0, 113, 0, 35)
+SynX.Font = Enum.Font.SourceSans
+SynX.Text = "Synapse X"
+SynX.TextColor3 = Color3.fromRGB(0, 0, 0)
+SynX.TextScaled = true
+SynX.TextSize = 14.000
+SynX.TextWrapped = true
+
+PL.Name = "PL"
+PL.Parent = ScrollingFrame
+PL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PL.BackgroundTransparency = 1.000
+PL.Position = UDim2.new(0, 0, 0.779628873, 0)
+PL.Size = UDim2.new(0, 409, 0, 47)
+PL.Font = Enum.Font.SourceSans
+PL.Text = "Prison Life"
+PL.TextColor3 = Color3.fromRGB(0, 0, 0)
+PL.TextScaled = true
+PL.TextSize = 14.000
+PL.TextWrapped = true
+
+Admin.Name = "Admin"
+Admin.Parent = ScrollingFrame
+Admin.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Admin.Position = UDim2.new(0.334128857, 0, 0.847258687, 0)
+Admin.Size = UDim2.new(0, 113, 0, 35)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextScaled = true
+Admin.TextSize = 14.000
+Admin.TextWrapped = true
+
+Prevail.Name = "Prevail"
+Prevail.Parent = ScrollingFrame
+Prevail.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Prevail.Position = UDim2.new(0.028639622, 0, 0.847258687, 0)
+Prevail.Size = UDim2.new(0, 113, 0, 35)
+Prevail.Font = Enum.Font.SourceSans
+Prevail.Text = "Prevail (ew)"
+Prevail.TextColor3 = Color3.fromRGB(0, 0, 0)
+Prevail.TextScaled = true
+Prevail.TextSize = 14.000
+Prevail.TextWrapped = true
+
+Vynixiu.Name = "Vynixiu"
+Vynixiu.Parent = ScrollingFrame
+Vynixiu.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Vynixiu.Position = UDim2.new(0.63484484, 0, 0.847258687, 0)
+Vynixiu.Size = UDim2.new(0, 113, 0, 35)
+Vynixiu.Font = Enum.Font.SourceSans
+Vynixiu.Text = "Vynixiu"
+Vynixiu.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vynixiu.TextScaled = true
+Vynixiu.TextSize = 14.000
+Vynixiu.TextWrapped = true
+
+Hang2.Name = "Hang2"
+Hang2.Parent = ScrollingFrame
+Hang2.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Hang2.Position = UDim2.new(0.63484484, 0, 0.460434645, 0)
+Hang2.Size = UDim2.new(0, 113, 0, 35)
+Hang2.Font = Enum.Font.SourceSans
+Hang2.Text = "LGBTQ+ Hangout 2"
+Hang2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hang2.TextScaled = true
+Hang2.TextSize = 14.000
+Hang2.TextWrapped = true
+
+-- Scripts:
+
+local function QCBWUE_fake_script() -- Credits.creds 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/CreditsForGunHub"))()
+	end)
+end
+coroutine.wrap(QCBWUE_fake_script)()
+local function UVZWBQ_fake_script() -- Title.LocalScript 
+	local script = Instance.new('LocalScript', Title)
+
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+	
+	
+end
+coroutine.wrap(UVZWBQ_fake_script)()
+local function VBYIN_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(VBYIN_fake_script)()
+local function JPME_fake_script() -- BIGP.bigp 
+	local script = Instance.new('LocalScript', BIGP)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(JPME_fake_script)()
+local function QYWLDJ_fake_script() -- BPBot.bpbot 
+	local script = Instance.new('LocalScript', BPBot)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/MLPypHYv', true))()
+	end)
+end
+coroutine.wrap(QYWLDJ_fake_script)()
+local function PYBM_fake_script() -- BPLights.bplight 
+	local script = Instance.new('LocalScript', BPLights)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:GetObjects("rbxassetid://1014703659")[1].Source)()
+	end)
+end
+coroutine.wrap(PYBM_fake_script)()
+local function RCQOEEE_fake_script() -- PF.pf 
+	local script = Instance.new('LocalScript', PF)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(RCQOEEE_fake_script)()
+local function SKDBYR_fake_script() -- ProjLaz.projektlaz 
+	local script = Instance.new('LocalScript', ProjLaz)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	end)
+end
+coroutine.wrap(SKDBYR_fake_script)()
+local function GUIGUVY_fake_script() -- MM2.mm2 
+	local script = Instance.new('LocalScript', MM2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+	end)
+end
+coroutine.wrap(GUIGUVY_fake_script)()
+local function FQKYLTU_fake_script() -- Skywars.scywars 
+	local script = Instance.new('LocalScript', Skywars)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DohmBoyOG/Script-Dump/main/OPSkywarsGUI_NolixXDohmScripts_Public.lua"))()
+	end)
+end
+coroutine.wrap(FQKYLTU_fake_script)()
+local function SBLW_fake_script() -- Mortem.mortem 
+	local script = Instance.new('LocalScript', Mortem)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://risa.gq/Samuel/Mortem.txt"))()
+	end)
+end
+coroutine.wrap(SBLW_fake_script)()
+local function YHGYGR_fake_script() -- FNF.fnf 
+	local script = Instance.new('LocalScript', FNF)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/scripts/main/funky'),true))()
+	end)
+end
+coroutine.wrap(YHGYGR_fake_script)()
+local function NHQHLWK_fake_script() -- Sharkbite.sharcbite 
+	local script = Instance.new('LocalScript', Sharkbite)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/main/main/Gun%20Hub'),true))()
+	end)
+end
+coroutine.wrap(NHQHLWK_fake_script)()
+local function ETAXFUD_fake_script() -- Islands.islands 
+	local script = Instance.new('LocalScript', Islands)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+	end)
+end
+coroutine.wrap(ETAXFUD_fake_script)()
+local function GHBD_fake_script() -- Jailbreak.jailbreak 
+	local script = Instance.new('LocalScript', Jailbreak)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+	end)
+end
+coroutine.wrap(GHBD_fake_script)()
+local function IGFGZTF_fake_script() -- MyRes.myres 
+	local script = Instance.new('LocalScript', MyRes)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+	end)
+end
+coroutine.wrap(IGFGZTF_fake_script)()
+local function RYTODW_fake_script() -- NinjaLeg1.ninjaleg1 
+	local script = Instance.new('LocalScript', NinjaLeg1)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/potatoman42o/potato-hub-mmmm/main/init%20-%20obf.lua"))()
+	end)
+end
+coroutine.wrap(RYTODW_fake_script)()
+local function BOOM_fake_script() -- NinjaLeg2.ninjaleg2 
+	local script = Instance.new('LocalScript', NinjaLeg2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/Obfuscated/main/NinjaLegends2.lua" ,true))()
+	end)
+end
+coroutine.wrap(BOOM_fake_script)()
+local function KGBYA_fake_script() -- Piggy.piggy 
+	local script = Instance.new('LocalScript', Piggy)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/loganthedevscripts/scripts/main/piggy'),true))()
+	end)
+end
+coroutine.wrap(KGBYA_fake_script)()
+local function YKFM_fake_script() -- Bruh.bbruh 
+	local script = Instance.new('LocalScript', Bruh)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+	end)
+end
+coroutine.wrap(YKFM_fake_script)()
+local function EZSE_fake_script() -- Dark.dark 
+	local script = Instance.new('LocalScript', Dark)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(EZSE_fake_script)()
+local function GILIOIM_fake_script() -- OldGogang.oldgogang 
+	local script = Instance.new('LocalScript', OldGogang)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Gogang%20Hub%20OLD%20Edition",true))()
+	end)
+end
+coroutine.wrap(GILIOIM_fake_script)()
+local function FZLS_fake_script() -- Gogang.gogang 
+	local script = Instance.new('LocalScript', Gogang)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/loganthedevscripts/main/main/Gogang%20Hub",true))()
+	end)
+end
+coroutine.wrap(FZLS_fake_script)()
+local function DBCVLRL_fake_script() -- Hades.hades 
+	local script = Instance.new('LocalScript', Hades)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Soffware/3kTMd/main/HadesHub.lua"),true))()
+	end)
+end
+coroutine.wrap(DBCVLRL_fake_script)()
+local function WHWJMC_fake_script() -- Owl.owl 
+	local script = Instance.new('LocalScript', Owl)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+end
+coroutine.wrap(WHWJMC_fake_script)()
+local function CLSPDLH_fake_script() -- SynX.sinx 
+	local script = Instance.new('LocalScript', SynX)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://github.com/loganthedevscripts/main/raw/main/Synapse%20X%20UI", true))()
+	end)
+end
+coroutine.wrap(CLSPDLH_fake_script)()
+local function XPRFD_fake_script() -- Admin.admin 
+	local script = Instance.new('LocalScript', Admin)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+	end)
+end
+coroutine.wrap(XPRFD_fake_script)()
+local function FGIMQT_fake_script() -- Prevail.prevailew 
+	local script = Instance.new('LocalScript', Prevail)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+	end)
+end
+coroutine.wrap(FGIMQT_fake_script)()
+local function TQNON_fake_script() -- Vynixiu.vyn 
+	local script = Instance.new('LocalScript', Vynixiu)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Prison%20Life"))()
+	end)
+end
+coroutine.wrap(TQNON_fake_script)()
+local function UKEWXA_fake_script() -- Hang2.hang2 
+	local script = Instance.new('LocalScript', Hang2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		(print)"im so sowwy i cant add this cus its to complex"
+	end)
+end
+coroutine.wrap(UKEWXA_fake_script)()
