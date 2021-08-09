@@ -186,3 +186,9 @@ Player.Chatted:connect(function(cht)
 		loadstring(game:HttpGet(("https://pastebin.com/raw/7B6rpudb"), true))()
 	end
 end)
+
+Player.Chatted:connect(function(cht)
+	if cht:match ("/fling") then
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/testfling"), true))()
+	end
+end)
