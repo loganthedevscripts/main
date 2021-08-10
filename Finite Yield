@@ -1,5 +1,7 @@
 local Player = game.Players.LocalPlayer
 
+
+
 Player.Chatted:connect(function(cht)
 	if cht:match ("/load bedwars") then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))()
@@ -111,13 +113,13 @@ end)
 
 Player.Chatted:connect(function(cht)
 	if cht:match ("/credits") then
-		(print)"Made by loganthedevscripts on github"
+		(print)"Made by loganthedevscripts on github, Version 1.2"
 	end
 end)
 
 Player.Chatted:connect(function(cht)
 	if cht:match ("/cmds") then
-		(print)"Commands: /credits - Credits /infyield - Infinite Yield /cmdx - CMD-X /autojump - Disable AutoJump /jump low,default,medium,high - Speed /sonic - FAST /jump low,default,medium,high /sit - sit /load <gamename> - Load a game's script /synapse - Load Synapse X /god - Become God /kick - Kick yourself /noclip - Noclip /btools - Btools"
+		(print)"Commands: /credits - Credits /infyield - Infinite Yield /cmdx - CMD-X /autojump - Disable AutoJump /jump low,default,medium,high - Speed /sonic - FAST /jump low,default,medium,high /sit - sit /load <gamename> - Load a game's script /synapse - Load Synapse X /god - Become God /kick - Kick yourself /noclip - Noclip /btools - Btools /fly - Fly /infjump - Infinite Jump /clicktp - Click Teleport"
 		
 	end
 end)
@@ -192,3 +194,34 @@ Player.Chatted:connect(function(cht)
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/testfling"), true))()
 	end
 end)
+
+Player.Chatted:connect(function(cht)
+	if cht:match ("/fly") then
+		print("Press E to fly")
+		loadstring(game:HttpGet(("https://pastebin.com/raw/A7RedbHw"), true))()
+	end
+end)
+
+Player.Chatted:connect(function(cht)
+	if cht:match ("/clicktp") then
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Click Teleport"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end
+end)
+
+Player.Chatted:conenct(function(cht)
+	if cht:match ("/infjump") then
+		loadstring(game:HttpGet(("https://pastebin.com/raw/BF58YchD"), true))()
+	end
+end)
+
+print("All info will be printed here in console")
+
