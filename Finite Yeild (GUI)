@@ -1,0 +1,361 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Mainframe = Instance.new("ImageLabel")
+local Title = Instance.new("ImageLabel")
+local SpeedLow = Instance.new("TextButton")
+local SpeedNormal = Instance.new("TextButton")
+local SpeedHigh = Instance.new("TextButton")
+local JumpHigh = Instance.new("TextButton")
+local Fling = Instance.new("TextButton")
+local JumpNormal = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local ClickTP = Instance.new("TextButton")
+local Btools = Instance.new("TextButton")
+local JumpLow = Instance.new("TextButton")
+local CMDS = Instance.new("TextButton")
+local InfJump = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Mainframe.Name = "Mainframe"
+Mainframe.Parent = ScreenGui
+Mainframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainframe.BackgroundTransparency = 1.000
+Mainframe.Position = UDim2.new(0.358265221, 0, 0.325898379, 0)
+Mainframe.Size = UDim2.new(0, 562, 0, 280)
+Mainframe.Image = "rbxassetid://3570695787"
+Mainframe.ImageColor3 = Color3.fromRGB(172, 183, 255)
+Mainframe.ScaleType = Enum.ScaleType.Slice
+Mainframe.SliceCenter = Rect.new(100, 100, 100, 100)
+Mainframe.SliceScale = 0.120
+
+Title.Name = "Title"
+Title.Parent = Mainframe
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.00116542401, 0, -0.0026730129, 0)
+Title.Size = UDim2.new(0, 562, 0, 45)
+Title.Image = "rbxassetid://3570695787"
+Title.ImageColor3 = Color3.fromRGB(128, 136, 190)
+Title.ScaleType = Enum.ScaleType.Slice
+Title.SliceCenter = Rect.new(100, 100, 100, 100)
+Title.SliceScale = 0.120
+
+SpeedLow.Name = "SpeedLow"
+SpeedLow.Parent = Mainframe
+SpeedLow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedLow.Position = UDim2.new(0.0160142351, 0, 0.160714284, 0)
+SpeedLow.Size = UDim2.new(0, 158, 0, 50)
+SpeedLow.Font = Enum.Font.SourceSans
+SpeedLow.Text = "Low Speed"
+SpeedLow.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedLow.TextScaled = true
+SpeedLow.TextSize = 14.000
+SpeedLow.TextWrapped = true
+
+SpeedNormal.Name = "SpeedNormal"
+SpeedNormal.Parent = Mainframe
+SpeedNormal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedNormal.Position = UDim2.new(0.320284694, 0, 0.160714284, 0)
+SpeedNormal.Size = UDim2.new(0, 158, 0, 50)
+SpeedNormal.Font = Enum.Font.SourceSans
+SpeedNormal.Text = "Normal Speed"
+SpeedNormal.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedNormal.TextScaled = true
+SpeedNormal.TextSize = 14.000
+SpeedNormal.TextWrapped = true
+
+SpeedHigh.Name = "SpeedHigh"
+SpeedHigh.Parent = Mainframe
+SpeedHigh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedHigh.Position = UDim2.new(0.620996535, 0, 0.160714284, 0)
+SpeedHigh.Size = UDim2.new(0, 189, 0, 50)
+SpeedHigh.Font = Enum.Font.SourceSans
+SpeedHigh.Text = "High Speed"
+SpeedHigh.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedHigh.TextScaled = true
+SpeedHigh.TextSize = 14.000
+SpeedHigh.TextWrapped = true
+
+JumpHigh.Name = "JumpHigh"
+JumpHigh.Parent = Mainframe
+JumpHigh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpHigh.Position = UDim2.new(0.622775912, 0, 0.378571451, 0)
+JumpHigh.Size = UDim2.new(0, 188, 0, 50)
+JumpHigh.Font = Enum.Font.SourceSans
+JumpHigh.Text = "High JumpPoiwer"
+JumpHigh.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpHigh.TextScaled = true
+JumpHigh.TextSize = 14.000
+JumpHigh.TextWrapped = true
+
+Fling.Name = "Fling"
+Fling.Parent = Mainframe
+Fling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fling.Position = UDim2.new(0.622775912, 0, 0.600000024, 0)
+Fling.Size = UDim2.new(0, 187, 0, 50)
+Fling.Font = Enum.Font.SourceSans
+Fling.Text = "Fling"
+Fling.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fling.TextScaled = true
+Fling.TextSize = 14.000
+Fling.TextWrapped = true
+
+JumpNormal.Name = "JumpNormal"
+JumpNormal.Parent = Mainframe
+JumpNormal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpNormal.Position = UDim2.new(0.320284694, 0, 0.378571421, 0)
+JumpNormal.Size = UDim2.new(0, 158, 0, 50)
+JumpNormal.Font = Enum.Font.SourceSans
+JumpNormal.Text = "Normal JumpPower"
+JumpNormal.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpNormal.TextScaled = true
+JumpNormal.TextSize = 14.000
+JumpNormal.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = Mainframe
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.Position = UDim2.new(0.320284694, 0, 0.600000024, 0)
+Fly.Size = UDim2.new(0, 158, 0, 50)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+ClickTP.Name = "ClickTP"
+ClickTP.Parent = Mainframe
+ClickTP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickTP.Position = UDim2.new(0.620996535, 0, 0.817857146, 0)
+ClickTP.Size = UDim2.new(0, 188, 0, 50)
+ClickTP.Font = Enum.Font.SourceSans
+ClickTP.Text = "Click Teleport"
+ClickTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClickTP.TextScaled = true
+ClickTP.TextSize = 14.000
+ClickTP.TextWrapped = true
+
+Btools.Name = "Btools"
+Btools.Parent = Mainframe
+Btools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Btools.Position = UDim2.new(0.320284694, 0, 0.821428597, 0)
+Btools.Size = UDim2.new(0, 158, 0, 50)
+Btools.Font = Enum.Font.SourceSans
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.fromRGB(0, 0, 0)
+Btools.TextScaled = true
+Btools.TextSize = 14.000
+Btools.TextWrapped = true
+
+JumpLow.Name = "JumpLow"
+JumpLow.Parent = Mainframe
+JumpLow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpLow.Position = UDim2.new(0.0160142183, 0, 0.378571451, 0)
+JumpLow.Size = UDim2.new(0, 158, 0, 50)
+JumpLow.Font = Enum.Font.SourceSans
+JumpLow.Text = "Low JumpPower"
+JumpLow.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpLow.TextScaled = true
+JumpLow.TextSize = 14.000
+JumpLow.TextWrapped = true
+
+CMDS.Name = "CMDS"
+CMDS.Parent = Mainframe
+CMDS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CMDS.Position = UDim2.new(0.0160142183, 0, 0.817857146, 0)
+CMDS.Size = UDim2.new(0, 158, 0, 50)
+CMDS.Font = Enum.Font.SourceSans
+CMDS.Text = "Commands "
+CMDS.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMDS.TextScaled = true
+CMDS.TextSize = 14.000
+CMDS.TextWrapped = true
+
+InfJump.Name = "InfJump"
+InfJump.Parent = Mainframe
+InfJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfJump.Position = UDim2.new(0.0160142183, 0, 0.600000024, 0)
+InfJump.Size = UDim2.new(0, 158, 0, 50)
+InfJump.Font = Enum.Font.SourceSans
+InfJump.Text = "Infinite Jump"
+InfJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfJump.TextScaled = true
+InfJump.TextSize = 14.000
+InfJump.TextWrapped = true
+
+TextLabel.Parent = Mainframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, -0.0142857144, 0)
+TextLabel.Size = UDim2.new(0, 562, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Finite Yeild (GUI)"
+TextLabel.TextColor3 = Color3.fromRGB(140, 255, 98)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Mainframe
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0.941281259, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 32, 0, 44)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function LJVNC_fake_script() -- SpeedLow.lowspeed 
+	local script = Instance.new('LocalScript', SpeedLow)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 10
+	end)
+end
+coroutine.wrap(LJVNC_fake_script)()
+local function XRTAX_fake_script() -- SpeedNormal.normalspeed 
+	local script = Instance.new('LocalScript', SpeedNormal)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end)
+end
+coroutine.wrap(XRTAX_fake_script)()
+local function BVKFPT_fake_script() -- SpeedHigh.hispeed 
+	local script = Instance.new('LocalScript', SpeedHigh)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
+	end)
+end
+coroutine.wrap(BVKFPT_fake_script)()
+local function LDEKC_fake_script() -- JumpHigh.highjump 
+	local script = Instance.new('LocalScript', JumpHigh)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+	end)
+end
+coroutine.wrap(LDEKC_fake_script)()
+local function GPXRM_fake_script() -- Fling.fling 
+	local script = Instance.new('LocalScript', Fling)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/loganthedevscripts/scripts/main/testfling"), true))()
+	end)
+end
+coroutine.wrap(GPXRM_fake_script)()
+local function MKDZO_fake_script() -- JumpNormal.normaljump 
+	local script = Instance.new('LocalScript', JumpNormal)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end)
+end
+coroutine.wrap(MKDZO_fake_script)()
+local function BZNDEU_fake_script() -- Fly.fly 
+	local script = Instance.new('LocalScript', Fly)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		print("Press E to fly")
+		loadstring(game:HttpGet(("https://pastebin.com/raw/A7RedbHw"), true))()
+	end)
+end
+coroutine.wrap(BZNDEU_fake_script)()
+local function PLXIM_fake_script() -- ClickTP.clicktp 
+	local script = Instance.new('LocalScript', ClickTP)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Click Teleport"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(PLXIM_fake_script)()
+local function FEHHRA_fake_script() -- Btools.btoosl 
+	local script = Instance.new('LocalScript', Btools)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(("https://pastebin.com/raw/7B6rpudb"), true))()
+	end)
+end
+coroutine.wrap(FEHHRA_fake_script)()
+local function AJOMJWS_fake_script() -- JumpLow.lowjump 
+	local script = Instance.new('LocalScript', JumpLow)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 35
+	end)
+end
+coroutine.wrap(AJOMJWS_fake_script)()
+local function QTOOX_fake_script() -- CMDS.admin 
+	local script = Instance.new('LocalScript', CMDS)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/loganthedevscripts/main/main/Finite%20Yield"), true))()
+	end)
+end
+coroutine.wrap(QTOOX_fake_script)()
+local function SJIWC_fake_script() -- InfJump.inf 
+	local script = Instance.new('LocalScript', InfJump)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(("https://pastebin.com/raw/BF58YchD"), true))()
+	end)
+end
+coroutine.wrap(SJIWC_fake_script)()
+local function AEPG_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(AEPG_fake_script)()
